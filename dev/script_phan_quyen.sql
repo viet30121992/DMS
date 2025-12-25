@@ -1,0 +1,132 @@
+CREATE STRUCTURED PRIVILEGE EXT.ALL_SECURITY_EXT_ITC FOR SELECT
+	ON EXT.CSA_RPT_BVL_ITC_COMPARE_POSITION_RESULT,
+		EXT.CSA_INC01_BVL,
+		EXT.CSA_B011_BVL
+WHERE EXISTS ( SELECT
+				 NULL 
+				FROM 
+					CSA_DATASECURITY 
+				WHERE 
+					USERID = SESSION_CONTEXT('APPLICATIONUSER') 
+					AND SECURITYTYPE='ALL' 
+					AND REMOVEDATE=TO_DATE('22000101','YYYYMMDD') 
+			);
+ 
+GRANT STRUCTURED PRIVILEGE EXT.ALL_SECURITY_EXT_ITC  TO 0323;
+
+CREATE STRUCTURED PRIVILEGE EXT.BU_SECURITY_EXT_ITC FOR SELECT
+
+	ON EXT.CSA_RPT_BVL_ITC_COMPARE_POSITION_RESULT,
+
+		EXT.CSA_INC01_BVL,
+
+		EXT.CSA_B011_BVL
+
+WHERE 
+
+	PROCESSINGUNITSEQ IN ( SELECT
+
+							BU.PROCESSINGUNITSEQ 
+
+						FROM 
+
+							CSA_DATASECURITY DS,
+
+							CS_BUSINESSUNIT BU 
+
+						WHERE 
+
+							DS.VALUE = BU.BUSINESSUNITSEQ
+
+							AND DS.USERID = SESSION_CONTEXT('APPLICATIONUSER') 
+
+							AND DS.SECURITYTYPE='BU' 
+
+							--	AND BU.REMOVEDATE =TO_DATE('22000101', 'YYYYMMDD')
+
+							AND DS.REMOVEDATE=TO_DATE('22000101', 'YYYYMMDD')
+
+						);
+ 
+ 
+GRANT STRUCTURED PRIVILEGE EXT.BU_SECURITY_EXT_ITC  TO 0323;
+ 
+ CREATE STRUCTURED PRIVILEGE EXT.PG_SECURITY_EXT_STAFF_POS_CHANNEL_ITC FOR SELECT
+	ON EXT.CSA_RPT_BVL_ITC_COMPARE_POSITION_RESULT,
+		EXT.CSA_INC01_BVL,
+		EXT.CSA_B011_BVL
+WHERE upper(branch_name) in 
+( select distinct pgbranchname
+	from 
+	EXT.BVL_VW_POS_BRANCH_CLASSIFIERS pos 
+	join  EXT.BVL_RPT_BVLSTAFF_INFO staff
+		on pos.pos = staff.branch 
+		and staff.EXPIRATIONDATE = TO_DATE('22000101','YYYYMMDD')
+		and staff.staffcode = SESSION_CONTEXT('APPLICATIONUSER') 
+	join EXT.BVL_VW_STAFFTYPE_CLASSIFIERS staffcls 
+		on staff.posstaff= staffcls.genericattribute4 
+		and pos.channelid= staffcls.CHANNELID
+	join (select distinct
+				upper( LTRIM(RTRIM(SUBSTRING(pg.name,0,locate(pg.name,'-',-1)-1))) ) as pgbranchname,
+				LTRIM(RTRIM(SUBSTRING(pg.name,locate(pg.name,'-',-1)+1,length(pg.name))))  as pgbranchcode
+		from cs_positiongroup pg  
+		where  pg.removeDate=TO_DATE('22000101','YYYYMMDD')
+		) pg 
+		on pg.pgbranchcode =  pos.branchid)
+		and processingunitseq in (select distinct bu.processingunitseq
+									from 
+									EXT.BVL_RPT_BVLSTAFF_INFO staff
+									--and staff.staffcode = 'L9999002001' 
+									join EXT.BVL_VW_STAFFTYPE_CLASSIFIERS staffcls 
+										on staff.posstaff= staffcls.genericattribute4 
+										and  staff.EXPIRATIONDATE = TO_DATE('22000101','YYYYMMDD')
+										and staff.staffcode =  SESSION_CONTEXT('APPLICATIONUSER') 
+									join tcmp.cs_businessunit bu
+										on bu.description =  staffcls.genericattribute3
+								);
+GRANT STRUCTURED PRIVILEGE EXT.PG_SECURITY_EXT_STAFF_POS_CHANNEL_ITC  TO 0323;
+
+CREATE STRUCTURED PRIVILEGE ext.PG_SECURITY_EXT_BRANCH_NAME_ITC FOR SELECT
+	 ON EXT.CSA_RPT_BVL_ITC_COMPARE_POSITION_RESULT,
+		EXT.CSA_INC01_BVL,
+		EXT.CSA_B011_BVL
+WHERE upper(branch_name) in 
+( select
+	upper( LTRIM(RTRIM(SUBSTRING(pg.name,0,locate(pg.name,'-',-1)-1))) )
+	from CSA_DataSecurity ds , cs_positiongroup pg  
+	where ds.value=pg.positionGroupSeq
+	and pg.removeDate=TO_DATE('22000101','YYYYMMDD')
+	and ds.userid = SESSION_CONTEXT('APPLICATIONUSER') 
+	and ds.securityType='PG' 
+	and ds.removeDate=TO_DATE('22000101','YYYYMMDD')
+);
+ 
+GRANT STRUCTURED PRIVILEGE EXT.PG_SECURITY_EXT_BRANCH_NAME_ITC  TO 0323;
+
+CREATE STRUCTURED PRIVILEGE EXT.ORG_HIER_SECURITY_EXT_ITC FOR SELECT
+
+	ON EXT.CSA_RPT_BVL_ITC_COMPARE_POSITION_RESULT,
+
+		EXT.CSA_INC01_BVL,
+
+		EXT.CSA_B011_BVL
+
+WHERE POSITIONSEQ IN ( SELECT
+
+	 DESCENDANTPOSITIONSEQ 
+
+	FROM CSA_PAREPORTINGDIMENSION 
+
+	WHERE ANCESTORPA_SK IN (SELECT
+
+	 PA_SK 
+
+		FROM CSA_PADIMENSION 
+
+		WHERE USERID = SESSION_CONTEXT('APPLICATIONUSER') 
+
+		AND ISPAYEE=1 ) ) ;	
+
+
+	GRANT STRUCTURED PRIVILEGE EXT.ORG_HIER_SECURITY_EXT_ITC  TO 0323;
+ 
