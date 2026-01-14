@@ -21884,6 +21884,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"PRODUCT_CODE": {
+				"@Common.Label": "PRODUCT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"PRODUCT_NAME": {
 				"@Common.Label": "PRODUCT_NAME",
 				"type": "cds.String",
