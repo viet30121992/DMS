@@ -21734,6 +21734,11 @@
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
+			"COMPENSATIONDATE_STR": {
+				"@Common.Label": "COMPENSATIONDATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"PROCESSINGUNITSEQ": {
 				"@Common.Label": "PROCESSINGUNITSEQ",
 				"type": "cds.Integer64",
@@ -21932,6 +21937,16 @@
 			"FREELOOK_DATE": {
 				"@Common.Label": "FREELOOK_DATE",
 				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"ISSUE_DATE_STR": {
+				"@Common.Label": "ISSUE_DATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FREELOOK_DATE_STR": {
+				"@Common.Label": "FREELOOK_DATE_STR",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE1": {
