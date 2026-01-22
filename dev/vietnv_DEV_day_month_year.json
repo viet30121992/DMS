@@ -22551,5 +22551,1597 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_INC12": {
+		"kind": "entity",
+		"@Common.Label": "INC12",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "DATA_MONTH",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "DATA_TYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "PAR_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "PAR_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "CHILD_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "CHILD_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "BRANCH_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "BRANCH_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "DEPARTMENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "DEPARTMENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "GENERICATTRIBUTE5",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6": {
+				"@Common.Label": "GENERICDATE6",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7": {
+				"@Common.Label": "GENERICDATE7",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8": {
+				"@Common.Label": "GENERICDATE8",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9": {
+				"@Common.Label": "GENERICDATE9",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10": {
+				"@Common.Label": "GENERICDATE10",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6_STR": {
+				"@Common.Label": "GENERICDATE6_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7_STR": {
+				"@Common.Label": "GENERICDATE7_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8_STR": {
+				"@Common.Label": "GENERICDATE8_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9_STR": {
+				"@Common.Label": "GENERICDATE9_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10_STR": {
+				"@Common.Label": "GENERICDATE10_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "GENERICNUMBER1",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "GENERICNUMBER2",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "GENERICNUMBER4",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "GENERICNUMBER6",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "GENERICNUMBER7",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER8",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "GENERICNUMBER10",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "GENERICNUMBER11",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "GENERICNUMBER12",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "GENERICNUMBER13",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER14": {
+				"@Common.Label": "GENERICNUMBER14",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER15": {
+				"@Common.Label": "GENERICNUMBER15",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16": {
+				"@Common.Label": "GENERICNUMBER16",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER17": {
+				"@Common.Label": "GENERICNUMBER17",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER18": {
+				"@Common.Label": "GENERICNUMBER18",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER19": {
+				"@Common.Label": "GENERICNUMBER19",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER20": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
+	},
+	"EXT.CSA_BVL_ITC_INC41": {
+		"kind": "entity",
+		"@Common.Label": "INC41",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "DATA_MONTH",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "DATA_TYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "PAR_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "PAR_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "CHILD_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "CHILD_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "BRANCH_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "BRANCH_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "DEPARTMENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "DEPARTMENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "GENERICATTRIBUTE5",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6": {
+				"@Common.Label": "GENERICDATE6",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7": {
+				"@Common.Label": "GENERICDATE7",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8": {
+				"@Common.Label": "GENERICDATE8",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9": {
+				"@Common.Label": "GENERICDATE9",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10": {
+				"@Common.Label": "GENERICDATE10",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6_STR": {
+				"@Common.Label": "GENERICDATE6_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7_STR": {
+				"@Common.Label": "GENERICDATE7_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8_STR": {
+				"@Common.Label": "GENERICDATE8_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9_STR": {
+				"@Common.Label": "GENERICDATE9_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10_STR": {
+				"@Common.Label": "GENERICDATE10_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "GENERICNUMBER1",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "GENERICNUMBER2",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "GENERICNUMBER4",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "GENERICNUMBER6",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "GENERICNUMBER7",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER8",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "GENERICNUMBER10",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "GENERICNUMBER11",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "GENERICNUMBER12",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "GENERICNUMBER13",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER14": {
+				"@Common.Label": "GENERICNUMBER14",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER15": {
+				"@Common.Label": "GENERICNUMBER15",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16": {
+				"@Common.Label": "GENERICNUMBER16",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER17": {
+				"@Common.Label": "GENERICNUMBER17",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER18": {
+				"@Common.Label": "GENERICNUMBER18",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER19": {
+				"@Common.Label": "GENERICNUMBER19",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER20": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
+	},
+	"EXT.CSA_BVL_ITC_INC30": {
+		"kind": "entity",
+		"@Common.Label": "INC30 - Báo cáo thưởng tuyển luyện",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "DATA_MONTH",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "DATA_TYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "PAR_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "PAR_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "CHILD_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "CHILD_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "BRANCH_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "BRANCH_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "DEPARTMENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "DEPARTMENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "GENERICATTRIBUTE5",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6": {
+				"@Common.Label": "GENERICDATE6",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7": {
+				"@Common.Label": "GENERICDATE7",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8": {
+				"@Common.Label": "GENERICDATE8",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9": {
+				"@Common.Label": "GENERICDATE9",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10": {
+				"@Common.Label": "GENERICDATE10",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6_STR": {
+				"@Common.Label": "GENERICDATE6_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7_STR": {
+				"@Common.Label": "GENERICDATE7_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8_STR": {
+				"@Common.Label": "GENERICDATE8_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9_STR": {
+				"@Common.Label": "GENERICDATE9_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10_STR": {
+				"@Common.Label": "GENERICDATE10_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "GENERICNUMBER1",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "GENERICNUMBER2",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "GENERICNUMBER4",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "GENERICNUMBER6",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "GENERICNUMBER7",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER8",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "GENERICNUMBER10",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "GENERICNUMBER11",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "GENERICNUMBER12",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "GENERICNUMBER13",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER14": {
+				"@Common.Label": "GENERICNUMBER14",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER15": {
+				"@Common.Label": "GENERICNUMBER15",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16": {
+				"@Common.Label": "GENERICNUMBER16",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER17": {
+				"@Common.Label": "GENERICNUMBER17",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER18": {
+				"@Common.Label": "GENERICNUMBER18",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER19": {
+				"@Common.Label": "GENERICNUMBER19",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER20": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
+	},
+	"EXT.CSA_BVL_ITC_INC13": {
+		"kind": "entity",
+		"@Common.Label": "INC13 - Báo cáo thưởng năng suất TVV",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "DATA_MONTH",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "DATA_TYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "PAR_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "PAR_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "CHILD_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "CHILD_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "BRANCH_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "BRANCH_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "DEPARTMENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "DEPARTMENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "GENERICATTRIBUTE5",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6": {
+				"@Common.Label": "GENERICDATE6",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7": {
+				"@Common.Label": "GENERICDATE7",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8": {
+				"@Common.Label": "GENERICDATE8",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9": {
+				"@Common.Label": "GENERICDATE9",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10": {
+				"@Common.Label": "GENERICDATE10",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6_STR": {
+				"@Common.Label": "GENERICDATE6_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7_STR": {
+				"@Common.Label": "GENERICDATE7_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8_STR": {
+				"@Common.Label": "GENERICDATE8_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9_STR": {
+				"@Common.Label": "GENERICDATE9_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10_STR": {
+				"@Common.Label": "GENERICDATE10_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "GENERICNUMBER1",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "GENERICNUMBER2",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "GENERICNUMBER4",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "GENERICNUMBER6",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "GENERICNUMBER7",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER8",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "GENERICNUMBER10",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "GENERICNUMBER11",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "GENERICNUMBER12",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "GENERICNUMBER13",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER14": {
+				"@Common.Label": "GENERICNUMBER14",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER15": {
+				"@Common.Label": "GENERICNUMBER15",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16": {
+				"@Common.Label": "GENERICNUMBER16",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER17": {
+				"@Common.Label": "GENERICNUMBER17",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER18": {
+				"@Common.Label": "GENERICNUMBER18",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER19": {
+				"@Common.Label": "GENERICNUMBER19",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER20": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
