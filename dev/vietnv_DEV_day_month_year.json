@@ -11719,351 +11719,351 @@
 			}
 		}
 	},
-	    "EXT.CSA_RPT_BK09_REPORT": {
-        "kind": "entity",
-        "@Common.Label": "BK09 REPORT",
-        "@Analytics.query": false,
-        "@Analytics.dataCategory": {
-            "#": "CUBE"
-        },
-        "elements": {
-            "FILE_NAME": {
-                "@Common.Label": "FILE NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CASE_STATUS": {
-                "@Common.Label": "STATUS OF FILE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CREATOR_NAME": {
-                "@Common.Label": "CREATOR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CREATED_DATE_STR": {
-                "@Common.Label": "CREATED DATE STR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CREATED_DATE": {
-                "@Common.Label": "CREATED DATE",
-                "type": "cds.TIMESTAMP",
-                "@Analytics.Dimension": true
-            },
-            "APPROVER_NAME": {
-                "@Common.Label": "APPROVER",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "APPROVED_DATE": {
-                "@Common.Label": "APPROVED DATE",
-                "type": "cds.TIMESTAMP",
-                "@Analytics.Dimension": true
-            },
-            "APPROVED_DATE_STR": {
-                "@Common.Label": "APPROVED DATE STR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CASE_KEY": {
-                "@Common.Label": "ACCOUNTING ID",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "POS_CODE": {
-                "@Common.Label": "POS CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "POS_NAME": {
-                "@Common.Label": "POS NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "AGENT_CODE": {
-                "@Common.Label": "AGENT CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "AGENT_NAME": {
-                "@Common.Label": "AGENT NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "AMOUNT": {
-                "@Common.Label": "AMOUNT",
-                "type": "cds.Integer64",
-                "@Analytics.Measure": true
-            },
-            "PAYMENT_ITEM_CODE": {
-                "@Common.Label": "PAYMENT ITEM CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAYMENT_ITEM_NAME": {
-                "@Common.Label": "PAYMENT ITEM NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SECTION_NAME": {
-                "@Common.Label": "SECTION NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SUBSECTION_NAME": {
-                "@Common.Label": "SUBSECTION NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DESCRIPTION": {
-                "@Common.Label": "DESCRIPTION",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAYMENT_METHOD": {
-                "@Common.Label": "PAYMENT METHOD",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE": {
-                "@Common.Label": "PAID DATE",
-                "type": "cds.Date",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE_STR": {
-                "@Common.Label": "PAID DATE STR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SEQ_NO_STR": {
-                "@Common.Label": "SEQ NO STR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SEQ_NO": {
-                "@Common.Label": "SEQ NO",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CURRENCY": {
-                "@Common.Label": "Currency",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PERCENTAGE": {
-                "@Common.Label": "Percent",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CHANNEL_CODE": {
-                "@Common.Label": "CHANNEL CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CHANNEL_NAME": {
-                "@Common.Label": "CHANNEL NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "UNIT_CODE": {
-                "@Common.Label": "UNIT CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "UNIT_NAME": {
-                "@Common.Label": "UNIT NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DIVISION_CODE": {
-                "@Common.Label": "DIVISION CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DIVISION_NAME": {
-                "@Common.Label": "DIVISION NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "TITLE_NAME": {
-                "@Common.Label": "TITLE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "BUDGET": {
-                "@Common.Label": "BUDGET",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "HOLD_UNHOLD": {
-                "@Common.Label": "HOLD/UNHOLD",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            }
-        }
-    },
-    "EXT.CSA_BK07AGENTPAYROLLREPORT_SVW_BVL": {
-        "kind": "entity",
-        "@Common.Label": "BK07 AGENT PAYROLL REPORT",
-        "@Analytics.query": false,
-        "@Analytics.dataCategory": {
-            "#": "CUBE"
-        },
-        "elements": {
-            "PARTICIPANT_ID": {
-                "@Common.Label": "Mã TVV",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PARTICIPANT_NAME": {
-                "@Common.Label": "Tên TVV",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DATA_MONTH": {
-                "@Common.Label": "Tháng dữ liệu",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SECTION_NAME": {
-                "@Common.Label": "TÊN MỤC",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SUBSECTION_NAME": {
-                "@Common.Label": "TÊN MỤC PHỤ",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SORT_ORDER": {
-                "@Common.Label": "SEQ NO",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "SORT_ORDER_STR": {
-                "@Common.Label": "Seq No",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "INCENTIVE_NAME": {
-                "@Common.Label": "Nội dung",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "AMOUNT": {
-                "@Common.Label": "Số tiền",
-                "type": "cds.Integer64",
-                "@Analytics.Measure": true
-            },
-            "AMOUNT_STR": {
-                "@Common.Label": "AMOUNT STR",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE": {
-                "@Common.Label": "Ngày thanh toán",
-                "type": "cds.Date",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE_STR": {
-                "@Common.Label": "Ngày thanh toán",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE1": {
-                "@Common.Label": "Ngày thanh toán",
-                "type": "cds.Date",
-                "@Analytics.Dimension": true
-            },
-            "PAID_DATE_STR1": {
-                "@Common.Label": "Ngày thanh toán",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CURRENCY": {
-                "@Common.Label": "Currency",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PERCENTAGE": {
-                "@Common.Label": "Percent",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAYMENT_METHOD": {
-                "@Common.Label": "Phương thức thanh toán",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "PAYMENT_METHOD1": {
-                "@Common.Label": "Phương thức thanh toán",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "ASSEMBLY_ID": {
-                "@Common.Label": "ID tham chiếu",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "ASSEMBLY_ID1": {
-                "@Common.Label": "ID tham chiếu",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DESCRIPTION": {
-                "@Common.Label": "Diễn giải",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "POS_CODE": {
-                "@Common.Label": "POS CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "POS_NAME": {
-                "@Common.Label": "POS NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CHANNEL_CODE": {
-                "@Common.Label": "CHANNEL CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "CHANNEL_NAME": {
-                "@Common.Label": "CHANNEL NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "UNIT_CODE": {
-                "@Common.Label": "UNIT CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "UNIT_NAME": {
-                "@Common.Label": "UNIT NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DIVISION_CODE": {
-                "@Common.Label": "DIVISION CODE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "DIVISION_NAME": {
-                "@Common.Label": "DIVISION NAME",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            },
-            "TITLE_NAME": {
-                "@Common.Label": "TITLE",
-                "type": "cds.String",
-                "@Analytics.Dimension": true
-            }
-        }
-    },
+	"EXT.CSA_RPT_BK09_REPORT": {
+		"kind": "entity",
+		"@Common.Label": "BK09 REPORT",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"FILE_NAME": {
+				"@Common.Label": "FILE NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CASE_STATUS": {
+				"@Common.Label": "STATUS OF FILE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CREATOR_NAME": {
+				"@Common.Label": "CREATOR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CREATED_DATE_STR": {
+				"@Common.Label": "CREATED DATE STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CREATED_DATE": {
+				"@Common.Label": "CREATED DATE",
+				"type": "cds.TIMESTAMP",
+				"@Analytics.Dimension": true
+			},
+			"APPROVER_NAME": {
+				"@Common.Label": "APPROVER",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"APPROVED_DATE": {
+				"@Common.Label": "APPROVED DATE",
+				"type": "cds.TIMESTAMP",
+				"@Analytics.Dimension": true
+			},
+			"APPROVED_DATE_STR": {
+				"@Common.Label": "APPROVED DATE STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CASE_KEY": {
+				"@Common.Label": "ACCOUNTING ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_CODE": {
+				"@Common.Label": "AGENT CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_NAME": {
+				"@Common.Label": "AGENT NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AMOUNT": {
+				"@Common.Label": "AMOUNT",
+				"type": "cds.Integer64",
+				"@Analytics.Measure": true
+			},
+			"PAYMENT_ITEM_CODE": {
+				"@Common.Label": "PAYMENT ITEM CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAYMENT_ITEM_NAME": {
+				"@Common.Label": "PAYMENT ITEM NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SECTION_NAME": {
+				"@Common.Label": "SECTION NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SUBSECTION_NAME": {
+				"@Common.Label": "SUBSECTION NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DESCRIPTION": {
+				"@Common.Label": "DESCRIPTION",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAYMENT_METHOD": {
+				"@Common.Label": "PAYMENT METHOD",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE": {
+				"@Common.Label": "PAID DATE",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE_STR": {
+				"@Common.Label": "PAID DATE STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SEQ_NO_STR": {
+				"@Common.Label": "SEQ NO STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SEQ_NO": {
+				"@Common.Label": "SEQ NO",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CURRENCY": {
+				"@Common.Label": "Currency",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERCENTAGE": {
+				"@Common.Label": "Percent",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"TITLE_NAME": {
+				"@Common.Label": "TITLE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BUDGET": {
+				"@Common.Label": "BUDGET",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"HOLD_UNHOLD": {
+				"@Common.Label": "HOLD/UNHOLD",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			}
+		}
+	},
+	"EXT.CSA_BK07AGENTPAYROLLREPORT_SVW_BVL": {
+		"kind": "entity",
+		"@Common.Label": "BK07 AGENT PAYROLL REPORT",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"PARTICIPANT_ID": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PARTICIPANT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_MONTH": {
+				"@Common.Label": "Tháng dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SECTION_NAME": {
+				"@Common.Label": "TÊN MỤC",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SUBSECTION_NAME": {
+				"@Common.Label": "TÊN MỤC PHỤ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SORT_ORDER": {
+				"@Common.Label": "SEQ NO",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SORT_ORDER_STR": {
+				"@Common.Label": "Seq No",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"INCENTIVE_NAME": {
+				"@Common.Label": "Nội dung",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AMOUNT": {
+				"@Common.Label": "Số tiền",
+				"type": "cds.Integer64",
+				"@Analytics.Measure": true
+			},
+			"AMOUNT_STR": {
+				"@Common.Label": "AMOUNT STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE": {
+				"@Common.Label": "Ngày thanh toán",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE_STR": {
+				"@Common.Label": "Ngày thanh toán",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE1": {
+				"@Common.Label": "Ngày thanh toán",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PAID_DATE_STR1": {
+				"@Common.Label": "Ngày thanh toán",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CURRENCY": {
+				"@Common.Label": "Currency",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERCENTAGE": {
+				"@Common.Label": "Percent",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAYMENT_METHOD": {
+				"@Common.Label": "Phương thức thanh toán",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAYMENT_METHOD1": {
+				"@Common.Label": "Phương thức thanh toán",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"ASSEMBLY_ID": {
+				"@Common.Label": "ID tham chiếu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"ASSEMBLY_ID1": {
+				"@Common.Label": "ID tham chiếu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DESCRIPTION": {
+				"@Common.Label": "Diễn giải",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "CHANNEL NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "UNIT NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "DIVISION NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"TITLE_NAME": {
+				"@Common.Label": "TITLE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			}
+		}
+	},
 	"EXT.CSA_TLTT04AAGENTPAYMENTSUMMARY_SVW_BVL": {
 		"kind": "entity",
 		"@Common.Label": "TLTT04A AGENT PAYMENT SUMMARY",
@@ -22764,14 +22764,14 @@
 	},
 	"EXT.CSA_BVL_ITC_INC12": {
 		"kind": "entity",
-		"@Common.Label": "INC12",
+		"@Common.Label": "INC12 - Thưởng tư vấn viên mới 2026",
 		"@Analytics.query": true,
 		"@Analytics.dataCategory": {
 			"#": "CUBE"
 		},
 		"elements": {
 			"DATA_MONTH": {
-				"@Common.Label": "DATA_MONTH",
+				"@Common.Label": "Tháng dữ liệu",
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
@@ -22816,17 +22816,17 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_CODE": {
-				"@Common.Label": "CHILD_AGENT_CODE",
+				"@Common.Label": "TVV mới quay lại",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22836,62 +22836,62 @@
 				"@Analytics.Dimension": true
 			},
 			"CHANNEL_NAME": {
-				"@Common.Label": "CHANNEL_NAME",
+				"@Common.Label": "Tên Kênh",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHANNEL_CODE": {
-				"@Common.Label": "CHANNEL_CODE",
+				"@Common.Label": "Mã Kênh",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"REGION_NAME": {
-				"@Common.Label": "REGION_NAME",
+				"@Common.Label": "Tên Vùng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"REGION_CODE": {
-				"@Common.Label": "REGION_CODE",
+				"@Common.Label": "Mã Vùng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_CODE": {
-				"@Common.Label": "BRANCH_CODE",
+				"@Common.Label": "Mã Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"DEPARTMENT_NAME": {
-				"@Common.Label": "DEPARTMENT_NAME",
+				"@Common.Label": "Tên Phòng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"DEPARTMENT_CODE": {
-				"@Common.Label": "DEPARTMENT_CODE",
+				"@Common.Label": "Mã Phòng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_CODE": {
-				"@Common.Label": "DIVISION_CODE",
+				"@Common.Label": "Mã Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"UNIT_CODE": {
-				"@Common.Label": "UNIT_CODE",
+				"@Common.Label": "Mã Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22916,7 +22916,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chỉ tiêu Chứng Chỉ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -23011,7 +23011,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE2_STR": {
-				"@Common.Label": "GENERICDATE2_STR",
+				"@Common.Label": "Ngày bắt đầu làm việc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -23056,17 +23056,17 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thưởng Tháng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "Tổng thưởng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "IP Tháng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -23121,12 +23121,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER14": {
-				"@Common.Label": "GENERICNUMBER14",
+				"@Common.Label": "Thưởng vượt chặng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER15": {
-				"@Common.Label": "GENERICNUMBER15",
+				"@Common.Label": "IP Lũy kế 3 tháng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -23136,7 +23136,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "GENERICNUMBER17",
+				"@Common.Label": "Lũy kế đã nhận trong chặng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -24761,7 +24761,7 @@
 		},
 		"elements": {
 			"DATA_MONTH": {
-				"@Common.Label": "DATA_MONTH",
+				"@Common.Label": "Tháng dữ liệu",
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
@@ -24796,7 +24796,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24806,12 +24806,12 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24826,7 +24826,7 @@
 				"@Analytics.Dimension": true
 			},
 			"CHANNEL_NAME": {
-				"@Common.Label": "CHANNEL_NAME",
+				"@Common.Label": "Kênh",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24836,7 +24836,7 @@
 				"@Analytics.Dimension": true
 			},
 			"REGION_NAME": {
-				"@Common.Label": "REGION_NAME",
+				"@Common.Label": "Vùng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24846,7 +24846,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24856,7 +24856,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DEPARTMENT_NAME": {
-				"@Common.Label": "DEPARTMENT_NAME",
+				"@Common.Label": "Phòng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24866,7 +24866,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24876,7 +24876,7 @@
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24906,7 +24906,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24916,12 +24916,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
+				"@Common.Label": "Thù lao",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE6": {
-				"@Common.Label": "GENERICATTRIBUTE6",
+				"@Common.Label": "Tỷ lệ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24996,7 +24996,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE1_STR": {
-				"@Common.Label": "GENERICDATE1_STR",
+				"@Common.Label": "Ngày hiệu lực chức vụ TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25046,17 +25046,17 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "FYP",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "FYC",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "Lượt hoạt động chuẩn",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -25071,12 +25071,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER6": {
-				"@Common.Label": "GENERICNUMBER6",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER7": {
-				"@Common.Label": "GENERICNUMBER7",
+				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
