@@ -24001,7 +24001,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24011,12 +24011,12 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24031,7 +24031,7 @@
 				"@Analytics.Dimension": true
 			},
 			"CHANNEL_NAME": {
-				"@Common.Label": "CHANNEL_NAME",
+				"@Common.Label": "Kênh",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24041,7 +24041,7 @@
 				"@Analytics.Dimension": true
 			},
 			"REGION_NAME": {
-				"@Common.Label": "REGION_NAME",
+				"@Common.Label": "Vùng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24051,7 +24051,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24061,7 +24061,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DEPARTMENT_NAME": {
-				"@Common.Label": "DEPARTMENT_NAME",
+				"@Common.Label": "Phòng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24071,7 +24071,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24081,7 +24081,7 @@
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24111,7 +24111,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24121,12 +24121,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
+				"@Common.Label": "Tỷ lệ thưởng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE6": {
-				"@Common.Label": "GENERICATTRIBUTE6",
+				"@Common.Label": "Tiền thưởng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24206,7 +24206,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE2_STR": {
-				"@Common.Label": "GENERICDATE2_STR",
+				"@Common.Label": "Ngày bắt đầu làm việc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24251,22 +24251,22 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thâm niên",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "IP tháng liền trước",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "IP tháng hiện tại",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "GENERICNUMBER4",
+				"@Common.Label": "FYC tại tháng xét",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -24281,12 +24281,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER7": {
-				"@Common.Label": "GENERICNUMBER7",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER8": {
-				"@Common.Label": "GENERICNUMBER8",
+				"@Common.Label": "Tiền thưởng sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
