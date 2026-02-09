@@ -21169,7 +21169,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21179,22 +21179,22 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TTN",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TTN",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_CODE": {
-				"@Common.Label": "CHILD_AGENT_CODE",
+				"@Common.Label": "Mã TVVm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_NAME": {
-				"@Common.Label": "CHILD_AGENT_NAME",
+				"@Common.Label": "Tên TVVm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21219,7 +21219,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21239,7 +21239,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21249,7 +21249,7 @@
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21369,7 +21369,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE1_STR": {
-				"@Common.Label": "GENERICDATE1_STR",
+				"@Common.Label": "Ngày quyền tuyển dụng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21379,7 +21379,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE3_STR": {
-				"@Common.Label": "GENERICDATE3_STR",
+				"@Common.Label": "Ngày bắt đầu làm việc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -21419,27 +21419,27 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thâm niên TVVm",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "Thưởng TVVm",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "Số lượng TVVm HĐC",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "GENERICNUMBER4",
+				"@Common.Label": "Thù lao",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER5": {
-				"@Common.Label": "GENERICNUMBER5",
+				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -21494,12 +21494,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER16": {
-				"@Common.Label": "GENERICNUMBER16",
+				"@Common.Label": "Tỉ lệ thưởng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "GENERICNUMBER17",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -21509,7 +21509,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -22408,7 +22408,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22418,12 +22418,12 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22458,7 +22458,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22478,7 +22478,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22488,7 +22488,7 @@
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22518,12 +22518,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE4": {
-				"@Common.Label": "GENERICATTRIBUTE4",
+				"@Common.Label": "Loại TT",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22608,17 +22608,17 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE1_STR": {
-				"@Common.Label": "GENERICDATE1_STR",
+				"@Common.Label": "Ngày hiệu lực chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE2_STR": {
-				"@Common.Label": "GENERICDATE2_STR",
+				"@Common.Label": "Ngày bắt đầu làm việc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE3_STR": {
-				"@Common.Label": "GENERICDATE3_STR",
+				"@Common.Label": "Ngày nghỉ việc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -22658,27 +22658,27 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thâm niên chức vụ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "IP",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "Hoạt động chuẩn",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "GENERICNUMBER4",
+				"@Common.Label": "FYP",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER5": {
-				"@Common.Label": "GENERICNUMBER5",
+				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -22733,12 +22733,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER16": {
-				"@Common.Label": "GENERICNUMBER16",
+				"@Common.Label": "Thù lao Quản lý mới",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "GENERICNUMBER17",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -22748,7 +22748,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -24398,7 +24398,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24408,22 +24408,22 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TN/TB gốc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TN/TB gốc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_CODE": {
-				"@Common.Label": "CHILD_AGENT_CODE",
+				"@Common.Label": "Mã TN tách",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_NAME": {
-				"@Common.Label": "CHILD_AGENT_NAME",
+				"@Common.Label": "Tên TN tách",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24448,7 +24448,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24468,7 +24468,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24478,7 +24478,7 @@
 				"@Analytics.Dimension": true
 			},
 			"UNIT_NAME": {
-				"@Common.Label": "UNIT_NAME",
+				"@Common.Label": "Nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24508,7 +24508,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24518,12 +24518,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
+				"@Common.Label": "Decision type",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE6": {
-				"@Common.Label": "GENERICATTRIBUTE6",
+				"@Common.Label": "Tỷ lệ thù lao",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24618,7 +24618,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE5_STR": {
-				"@Common.Label": "GENERICDATE5_STR",
+				"@Common.Label": "Ngày hiệu lực chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -24648,22 +24648,22 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thâm niên chức vụ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "Quản lý mới TN con",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "PTHT TN/TN con",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "GENERICNUMBER4",
+				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -24728,7 +24728,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "GENERICNUMBER17",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -24738,7 +24738,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -25592,7 +25592,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25602,22 +25602,22 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "PAR_AGENT_CODE",
+				"@Common.Label": "Mã TB gốc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_NAME": {
-				"@Common.Label": "PAR_AGENT_NAME",
+				"@Common.Label": "Tên TB gốc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_CODE": {
-				"@Common.Label": "CHILD_AGENT_CODE",
+				"@Common.Label": "Mã TB tách",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_AGENT_NAME": {
-				"@Common.Label": "CHILD_AGENT_NAME",
+				"@Common.Label": "Tên TB tách",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25642,7 +25642,7 @@
 				"@Analytics.Dimension": true
 			},
 			"BRANCH_NAME": {
-				"@Common.Label": "BRANCH_NAME",
+				"@Common.Label": "Công ty",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25662,7 +25662,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DIVISION_NAME": {
-				"@Common.Label": "DIVISION_NAME",
+				"@Common.Label": "Ban gốc",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25712,7 +25712,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
+				"@Common.Label": "Loại TT",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25722,7 +25722,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE7": {
-				"@Common.Label": "GENERICATTRIBUTE7",
+				"@Common.Label": "Ban tách",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25812,7 +25812,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE5_STR": {
-				"@Common.Label": "GENERICDATE5_STR",
+				"@Common.Label": "Ngày hiệu lực chức vụ TBm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25842,22 +25842,22 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "GENERICNUMBER1",
+				"@Common.Label": "Thâm niên chức vụ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "GENERICNUMBER2",
+				"@Common.Label": "Thù lao ban tách",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+				"@Common.Label": "Thù lao quản lý mới TB",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "GENERICNUMBER4",
+				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -25917,12 +25917,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER16": {
-				"@Common.Label": "GENERICNUMBER16",
+				"@Common.Label": "Tổng thù lao",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "GENERICNUMBER17",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -25932,7 +25932,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
