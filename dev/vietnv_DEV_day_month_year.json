@@ -23966,7 +23966,7 @@
 		},
 		"elements": {
 			"DATA_MONTH": {
-				"@Common.Label": "DATA_MONTH",
+				"@Common.Label": "Tháng dữ liệu",
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
