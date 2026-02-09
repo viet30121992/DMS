@@ -21525,7 +21525,7 @@
 	},
 	"EXT.CSA_BVL_ITC_INC21": {
 		"kind": "entity",
-		"@Common.Label": "INC21 - Báo cáo thưởng vượt trội TTN",
+		"@Common.Label": "INC21 - Báo cáo thưởng vượt trội TTN à ád" ,
 		"@Analytics.query": true,
 		"@Analytics.dataCategory": {
 			"#": "CUBE"
