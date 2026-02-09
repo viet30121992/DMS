@@ -25305,7 +25305,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE3": {
-				"@Common.Label": "GENERICATTRIBUTE3",
+				"@Common.Label": "Chức vụ",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
