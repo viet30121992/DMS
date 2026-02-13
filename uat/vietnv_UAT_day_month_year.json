@@ -23406,7 +23406,7 @@
             }
         }
     },
-    "EXT.CSA_B012_BVL": {
+      "EXT.CSA_B012_BVL": {
         "kind": "entity",
         "@Common.Label": "B012- Báo cáo Tỷ lệ thu phí Tháng",
         "@Analytics.query": false,
@@ -23585,13 +23585,14 @@
                 }
             },
             "KPI_PCR": {
-                "@Common.Label": "TLTP TVV",
+                "@Common.Label": "TLTP",
                 "type": "cds.Decimal",
-                "scale": 2,
-                "@Analytics.Measure": true,
-                "@Aggregation.default": {
-                    "#": "SUM"
-                }
+                "@Analytics.Dimension": true
+            },
+            "KPI_PCR_STR": {
+                "@Common.Label": "TLTP TVV", 
+                "type": "cds.String",
+                "@Analytics.Dimension": true
             }
         }
     },
