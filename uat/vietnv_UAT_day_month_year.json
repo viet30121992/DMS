@@ -23801,8 +23801,13 @@
                     "#": "SUM"
                 }
             },
+             "KPI_PCR_STR": {
+                "@Common.Label": "TLTP Quý TVV", 
+                "type": "cds.String",
+                "@Analytics.Dimension": true
+            },
             "KPI_PCR": {
-                "@Common.Label": "TLTP Quý TVV",
+                "@Common.Label": "TLTP Quý TVV 1",
                 "type": "cds.Decimal",
                 "scale": 2,
                 "@Analytics.Measure": true,
