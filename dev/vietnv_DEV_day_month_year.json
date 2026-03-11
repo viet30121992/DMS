@@ -26168,5 +26168,243 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_EML05": {
+		"kind": "entity",
+		"@Common.Label": "EML05 - TVV đạt chuẩn",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "Năm",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "Mã ĐL",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "Tên",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "Mã công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "Mã phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "Chức vụ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "Số hợp đồng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "Hợp đồng tổ chức",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "Định kỳ phí",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "Mã trưởng ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "Mã trưởng nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "Tháng đạt chuẩn",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "Ngày đầu kỳ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "Ngày cuối kỳ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "Ngày tổng hợp dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE11": {
+				"@Common.Label": "Mã Ban/Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE12": {
+				"@Common.Label": "Mã trưởng Ban/Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE13": {
+				"@Common.Label": "TVV Đạt",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "Ngày bắt đầu làm việc- Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "Tháng dữ liệu - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "Ngày phát hành - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "Ngày bắt đầu làm việc",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "Tháng dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "Ngày phát hành",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "Phí  ĐT",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "PĐT",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
