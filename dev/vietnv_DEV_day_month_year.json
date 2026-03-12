@@ -26171,7 +26171,7 @@
 	},
 	"EXT.CSA_BVL_ITC_EML05": {
 		"kind": "entity",
-		"@Common.Label": "EML05 - TVV đạt chuẩn",
+		"@Common.Label": "EML05 TVV Đạt chuẩn",
 		"@Analytics.query": true,
 		"@Analytics.dataCategory": {
 			"#": "CUBE"
@@ -26193,7 +26193,7 @@
 				"@Analytics.Dimension": true
 			},
 			"PAR_AGENT_CODE": {
-				"@Common.Label": "Mã ĐL",
+				"@Common.Label": "Mã TVV",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -26393,7 +26393,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "PĐT",
+				"@Common.Label": "Nam",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
