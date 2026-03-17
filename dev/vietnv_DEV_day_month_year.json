@@ -26555,7 +26555,7 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
-			"CHILD_UNIT_NAME": {
+			"CHILD_UNIT_CODE": {
 				"@Common.Label": "Mã nhóm con",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
