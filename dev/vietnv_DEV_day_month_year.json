@@ -26440,6 +26440,16 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "Mã TN con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "Tên TN con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"CHANNEL_NAME": {
 				"@Common.Label": "Kênh",
 				"type": "cds.String",
@@ -26546,12 +26556,12 @@
 				"@Analytics.Dimension": true
 			},
 			"CHILD_DIVISION_NAME": {
-				"@Common.Label": "Tên nhóm con",
+				"@Common.Label": "Tên ban con",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"CHILD_DIVISION_CODE": {
-				"@Common.Label": "Mã nhóm con",
+				"@Common.Label": "Mã ban con",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -26591,7 +26601,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GRANDCHILD_DIVISION_CODE": {
-				"@Common.Label": "mã ban cháu",
+				"@Common.Label": "Mã ban cháu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
