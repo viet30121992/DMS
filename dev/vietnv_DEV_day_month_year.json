@@ -26171,7 +26171,7 @@
 	},
 	"EXT.CSA_BVL_ITC_EML05": {
 		"kind": "entity",
-		"@Common.Label": "EML05 TVV Đạt chuẩn ",
+		"@Common.Label": "EML05 TVV Đạt chuẩn",
 		"@Analytics.query": true,
 		"@Analytics.dataCategory": {
 			"#": "CUBE"
@@ -26516,8 +26516,13 @@
 				"@Analytics.Dimension": true
 			},
 			"RELATION_ESD": {
-				"@Common.Label": "Ngày bắt đầu hiệu lực",
+				"@Common.Label": "Ngày bắt đầu hiệu lực - Date",
 				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_ESD_STR": {
+				"@Common.Label": "Ngày bắt đầu hiệu lực",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"RELATION_EED": {
