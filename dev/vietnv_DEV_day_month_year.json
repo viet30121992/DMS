@@ -27057,5 +27057,198 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_EML04": {
+		"kind": "entity",
+		"@Common.Label": "EML04 - Báo cáo tách ban",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "Tháng",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "Mã TB cha",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "Tên TB cha",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "Mã TB con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "Tên TB con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "Mã công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "Mã phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PARENT_TITLE": {
+				"@Common.Label": "Chức vụ cha",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_ESD": {
+				"@Common.Label": "Ngày bắt đầu hiệu lực - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_ESD_STR": {
+				"@Common.Label": "Ngày bắt đầu hiệu lực",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_EED": {
+				"@Common.Label": "Ngày hết hiệu lực - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_EED_STR": {
+				"@Common.Label": "Ngày hết hiệu lực",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PARENT_PERIOD_SEQ": {
+				"@Common.Label": "PARENT_PERIOD_SEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_PERIOD_SEQ": {
+				"@Common.Label": "CHILD_PERIOD_SEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_DIVISION_NAME": {
+				"@Common.Label": "Ban con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_DIVISION_CODE": {
+				"@Common.Label": "Mã ban con",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"ROLE_DATE": {
+				"@Common.Label": "Ngày tách Ban - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"ROLE_DATE_STR": {
+				"@Common.Label": "Ngày tách Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"HA_BAC_DATE": {
+				"@Common.Label": "Ngày hạ bậc - Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"HA_BAC_DATE_STR": {
+				"@Common.Label": "Ngày hạ bậc",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RATE_VALUE1": {
+				"@Common.Label": "Tỉ lệ thừa hưởng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
