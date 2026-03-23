@@ -26650,6 +26650,16 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "Loại TT(con)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "Loại TT(cháu)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "GENERICNUMBER5",
 				"type": "cds.Decimal",
