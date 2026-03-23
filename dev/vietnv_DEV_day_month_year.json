@@ -27251,6 +27251,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "Loại thăng tiến",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "GENERICNUMBER5",
 				"type": "cds.Decimal",
