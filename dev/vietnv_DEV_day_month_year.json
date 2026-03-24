@@ -27461,7 +27461,7 @@
 			},
 			"COMMISSION_RATE": {
 				"@Common.Label": "Tỉ lệ hoa hồng",
-				"type": "cds.Decimal",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"ALLOCATION_YEAR": {
