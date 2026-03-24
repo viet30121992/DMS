@@ -27604,8 +27604,8 @@
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER9": {
-				"@Common.Label": "GENERICNUMBER9",
+			"GENERICNUMBER10": {
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -27634,8 +27634,8 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER10": {
-				"@Common.Label": "GENERICNUMBER20",
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
