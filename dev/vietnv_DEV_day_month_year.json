@@ -27265,5 +27265,383 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_INC11": {
+		"kind": "entity",
+		"@Common.Label": "INC11 - Báo cáo HHKT PA",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "DATA_MONTH",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"COMPENSATIONDATE": {
+				"@Common.Label": "COMPENSATIONDATE",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"COMPENSATIONDATE_STR": {
+				"@Common.Label": "Ngày tính hoa hồng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "Dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POLICY_CODE": {
+				"@Common.Label": "Hợp đồng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POLICY_ID": {
+				"@Common.Label": "POLICY_ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_CODE": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "Vùng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "Mã công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "Mã phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POLICY_HOLDER": {
+				"@Common.Label": "Bên mua bảo hiểm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PREMIUM_PAYMENT_TYPE": {
+				"@Common.Label": "Định kỳ phí",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PRODUCT_CODE": {
+				"@Common.Label": "Mã sản phẩm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PRODUCT_NAME": {
+				"@Common.Label": "Tên sản phẩm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PRODUCT_TYPE": {
+				"@Common.Label": "Loại sản phẩm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PHI_CHUAN": {
+				"@Common.Label": "Phí chuẩn",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"PHI_PHU_TROI": {
+				"@Common.Label": "Phí phụ trội",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"TOPUP": {
+				"@Common.Label": "Phí đóng thêm",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"COMMISSION_RATE": {
+				"@Common.Label": "Tỉ lệ hoa hồng",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"ALLOCATION_YEAR": {
+				"@Common.Label": "Năm hợp đồng",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"ISSUE_DATE": {
+				"@Common.Label": "ISSUE_DATE",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"FREELOOK_DATE": {
+				"@Common.Label": "FREELOOK_DATE",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"ISSUE_DATE_STR": {
+				"@Common.Label": "Ngày phát hành",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FREELOOK_DATE_STR": {
+				"@Common.Label": "Ngày huỷ freelook",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "GENERICATTRIBUTE5",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "Hoa hồng",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "Số tháng không hoạt động liên tiếp trong vòng 12 tháng gần nhất",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "GENERICNUMBER4",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "GENERICNUMBER5",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "GENERICNUMBER6",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "GENERICNUMBER7",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER8",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
