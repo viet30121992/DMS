@@ -26714,7 +26714,7 @@
 				"@Analytics.Dimension": true
 			},
 			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
+				"@Common.Label": "Dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -26854,12 +26854,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE9": {
-				"@Common.Label": "GENERICATTRIBUTE9",
+				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE10": {
-				"@Common.Label": "GENERICATTRIBUTE10",
+				"@Common.Label": "Tỷ lệ điều chỉnh theo TLTP",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -27466,7 +27466,7 @@
 			},
 			"ALLOCATION_YEAR": {
 				"@Common.Label": "Năm hợp đồng",
-				"type": "cds.Integer64",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"ISSUE_DATE": {
@@ -27571,7 +27571,7 @@
 			},
 			"GENERICNUMBER2": {
 				"@Common.Label": "Số tháng không hoạt động liên tiếp trong vòng 12 tháng gần nhất",
-				"type": "cds.Decimal",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
