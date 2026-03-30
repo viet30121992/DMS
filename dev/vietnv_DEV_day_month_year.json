@@ -26685,7 +26685,7 @@
 			},
 			"STT": {
 				"@Common.Label": "STT",
-				"type": "cds.Integer64",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"PROCESSINGUNITSEQ": {
@@ -26829,7 +26829,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE4": {
-				"@Common.Label": "Tỷ lệ thưởng",
+				"@Common.Label": "GENERICATTRIBUTE4",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
