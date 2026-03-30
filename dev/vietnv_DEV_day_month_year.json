@@ -26964,7 +26964,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "FYP ban",
+				"@Common.Label": "FYP ban.",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -26984,7 +26984,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER5": {
-				"@Common.Label": "FYC nhóm gián tiếp",
+				"@Common.Label": "FYC nhóm gián tiếp.",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -26994,7 +26994,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER7": {
-				"@Common.Label": "Phí thực thu",
+				"@Common.Label": "Phí thực thu.",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -27009,7 +27009,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER10": {
-				"@Common.Label": "Thù lao sau điều chỉnh",
+				"@Common.Label": "Thù lao sau điều chỉnh.",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -27039,7 +27039,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER16": {
-				"@Common.Label": "Thù lao",
+				"@Common.Label": "Thù lao.",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -27056,6 +27056,31 @@
 			"GENERICNUMBER19": {
 				"@Common.Label": "GENERICNUMBER19",
 				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1_STR": {
+				"@Common.Label": "FYP ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5_STR": {
+				"@Common.Label": "FYC nhóm gián tiếp",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7_STR": {
+				"@Common.Label": "Phí thực thu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16_STR": {
+				"@Common.Label": "Thù lao",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10_STR": {
+				"@Common.Label": "Thù lao sau điều chỉnh",
+				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER20": {
