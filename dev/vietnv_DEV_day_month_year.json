@@ -27058,29 +27058,29 @@
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER1_STR": {
-				"@Common.Label": "FYP ban",
-				"type": "cds.String",
+			"F1_STR": {
+				"@Common.Label": "FYP ban ",
+				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER5_STR": {
-				"@Common.Label": "FYC nhóm gián tiếp",
-				"type": "cds.String",
+			"F5_STR": {
+				"@Common.Label": "FYC nhóm gián tiếp ",
+				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER7_STR": {
-				"@Common.Label": "Phí thực thu",
-				"type": "cds.String",
+			"F7_STR": {
+				"@Common.Label": " Phí thực thu ",
+				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER16_STR": {
-				"@Common.Label": "Thù lao",
-				"type": "cds.String",
+			"F16_STR": {
+				"@Common.Label": " Thù lao ",
+				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER10_STR": {
-				"@Common.Label": "Thù lao sau điều chỉnh",
-				"type": "cds.String",
+			"F10_STR": {
+				"@Common.Label": " Thù lao sau điều chỉnh ",
+				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER20": {
@@ -27315,7 +27315,7 @@
 				"@Analytics.Dimension": true
 			},
 			"COMPENSATIONDATE_STR": {
-				"@Common.Label": "Ngày tính hoa hồng",
+				"@Common.Label": "Tháng dữ liệu",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -27635,7 +27635,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE1_STR": {
-				"@Common.Label": "GENERICDATE1_STR",
+				"@Common.Label": "Ngày tính hoa hồng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
