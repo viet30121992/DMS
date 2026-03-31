@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE EXT.SP_BVL_ITC_COMPARE_POSITION_APM_COMM
+CREATE PROCEDURE EXT.SP_BVL_ITC_COMPARE_POSITION_APM_COMM
                                     (
                                        IN p_month		          VARCHAR(100),
 									   IN p_mode  VARCHAR(100)
@@ -475,7 +475,7 @@ CREATE OR REPLACE PROCEDURE EXT.SP_BVL_ITC_COMPARE_POSITION_APM_COMM
 			   case when A_EFFECTIVEENDDATE='2200-01-01' then '1' end A_ISLAST,
 			   "PROCESSINGUNITSEQ",
 				"POSITIONSEQ",
-				"BRANCH_NAME"
+				TRIM(replace(replace(BRANCH_NAME,'Bảo Việt Nhân thọ',''),'Bảo Việt Nhân Thọ','')) "BRANCH_NAME"
 		from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_FULL"
 		where MODIFIED_MONTH=v_modified_date
 		;
@@ -498,4 +498,4 @@ CREATE OR REPLACE PROCEDURE EXT.SP_BVL_ITC_COMPARE_POSITION_APM_COMM
 		where MODIFIED_MONTH=v_modified_date;
 		commit;
 		
-	END;
+	END
