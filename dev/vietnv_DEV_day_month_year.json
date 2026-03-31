@@ -27315,7 +27315,7 @@
 				"@Analytics.Dimension": true
 			},
 			"COMPENSATIONDATE_STR": {
-				"@Common.Label": "Tháng dữ liệu",
+				"@Common.Label": "COMPENSATIONDATE_STR",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
