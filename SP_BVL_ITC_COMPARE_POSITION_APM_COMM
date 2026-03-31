@@ -1,0 +1,501 @@
+CREATE OR REPLACE PROCEDURE EXT.SP_BVL_ITC_COMPARE_POSITION_APM_COMM
+                                    (
+                                       IN p_month		          VARCHAR(100),
+									   IN p_mode  VARCHAR(100)
+                                    )
+   /***************************************************************************************************
+         name:   SP_BVL_ITC_COMPARE_POSITION_APM_COMM
+
+         revision history
+         
+         Ver             Date            Author                  Description
+         ----------------------------------------------------------------------------------------------------
+         
+         1.0             17/11/2025     nguyen.van.viet            Initial version
+   /***************************************************************************************************/
+     AS
+     
+	 
+    BEGIN
+   
+      
+   
+		USING EXT.RPT_BVL_LIB_BASE_ALL AS RPT_BVL_LIB_BASE_ALL;    
+		DECLARE v_eot  Date :=  to_date('01/01/2200','dd/mm/yyyy');
+		DECLARE v_modified_date date;
+		DECLARE v_modified_enddate date;
+		
+		if p_mode='ALL' THEN
+			v_modified_date:=to_date(substr(p_month,7,100)||'0101','yyyyMMdd');
+		ELSE
+			v_modified_date := to_date('01-'||substr(p_month,4,100),'dd-MM-yyyy');
+			v_modified_enddate := add_months(v_modified_date,1);
+		end if;
+		
+		--chay thu tuc cho bang danh muc cac node
+		CALL EXT.SP_BVL_ITC_APM_COM_CODE_MAP();
+		
+		delete from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_FULL"
+		where MODIFIED_MONTH=v_modified_date;
+		commit;
+		
+		--insert du lieu chi tiet vao bang chua du thong tin
+		insert into "EXT"."RPT_BVL_ITC_COMPARE_POSITION_FULL"
+		(
+			"MODIFIED_MONTH",
+			"A_LAST_MODIFIED",
+			"AGENT_CODE",
+			"C_POSITION",
+			"A_TITLE",
+			"A_HEADOFNODE",
+			"A_GENERICATTRIBUTE13",
+			"A_DISTRIBUTIONCHANNEL",
+			"A_PLAN",
+			"A_CREDITSTARTDATE",
+			"A_CREDITENDDATE",
+			"A_PROCESSINGSTARTDATE",
+			"A_PROCESSINGENDDATE",
+			"A_POSITIONGROUP",
+			"A_EFFECTIVESTARTDATE",
+			"A_EFFECTIVEENDDATE",
+			"A_GA1",
+			"A_GA2",
+			"A_GA3",
+			"A_GA4",
+			"A_GA5",
+			"A_GA6",
+			"A_GA7",
+			"A_GA8",
+			"A_GA9",
+			"A_GA10",
+			"A_GA11",
+			"A_GA15",
+			"A_GD1",
+			"A_GD2",
+			"A_GD3",
+			"A_GD4",
+			"A_GD5",
+			"A_GD6",
+			"C_TITLE",
+			"C_HEADOFNODE",
+			"C_GENERICATTRIBUTE13",
+			"C_DISTRIBUTIONCHANNEL",
+			"C_PLAN",
+			"C_CREDITSTARTDATE",
+			"C_CREDITENDDATE",
+			"C_PROCESSINGSTARTDATE",
+			"C_PROCESSINGENDDATE",
+			"C_POSITIONGROUP",
+			"C_EFFECTIVESTARTDATE",
+			"C_EFFECTIVEENDDATE",
+			"C_GA1",
+			"C_GA2",
+			"C_GA3",
+			"C_GA4",
+			"C_GA5",
+			"C_GA6",
+			"C_GA7",
+			"C_GA8",
+			"C_GA9",
+			"C_GA10",
+			"C_GA11",
+			"C_GA15",
+			"C_GD1",
+			"C_GD2",
+			"C_GD3",
+			"C_GD4",
+			"C_GD5",
+			"C_GD6",
+			"C_ISLAST",
+			"PROCESSINGUNITSEQ",
+			"POSITIONSEQ",
+			"BRANCH_NAME"
+		)
+		with temp1 as
+		(
+			select p.producerid,
+					v.title,
+					v.titleeffectivestartdate,
+					v.dateexp
+			from ext.CDL_APM_PRODUCER_BCKUP p
+			join ext.CDL_APM_PRODUCERVER_BCKUP v on v.producerno=p.producerno
+			where exists (
+			  select 1 from ext.CDL_APM_PRODUCERVER_BCKUP p1
+			  where p1.dateexp=22000101
+			  and p1.title in ('CV01','CV02','CV04')
+			  and p1.producerno=p.producerno
+			  and p1.prosta<>9
+			  )
+			union ALL
+			select p.producerid,
+					'CV05' title,
+					19000101 titleeffectivestartdate,
+					19000101 dateexp
+			from ext.CDL_APM_PRODUCER_BCKUP p
+			join ext.CDL_APM_PRODUCERVER_BCKUP v on v.producerno=p.producerno
+			where exists (
+			  select 1 from ext.CDL_APM_PRODUCERVER_BCKUP p1
+			  where p1.dateexp=22000101
+			  and p1.title in ('CV01','CV02','CV04')
+			  and p1.producerno=p.producerno
+			  and p1.prosta<>9
+			  )
+			 group by p.producerid
+		),temp2 as
+		(
+			select producerid,
+					title,
+					titleeffectivestartdate,
+					row_number() over(partition by producerid order by titleeffectivestartdate desc,dateexp desc) stt,
+					case when title in ('CV01','CV02','CV04') then 'OK' else 'NOK' end status
+			from temp1
+		),temp3 as
+		(
+			select producerid,titleeffectivestartdate GD5
+			from temp2 x
+			where exists (
+							select 1 from
+							(
+								select producerid,min(stt) min_stt
+								from temp2
+								where status='NOK'
+								group by producerid
+							) x2
+							where x2.producerid=x.producerid and x2.min_stt-1=x.stt
+						)
+		)
+		,apm as
+		(
+			select  distinct
+			        p.producerid agent_code,
+					null position,
+					mt.displayvalue a_title,
+					v.HEADOFNODE A_HEADOFNODE,
+					v.RECRUITEDAGENT A_GENERICATTRIBUTE13,
+					v.DISTRIBUTIONCHANNEL A_DISTRIBUTIONCHANNEL,
+					case when v.AgentStatus in ('TERM','PA') then null else  mp.displayvalue end A_PLAN,
+					to_Date(case when v.DATEEFF < 20210101 then 20210101 else v.DATEEFF end,'yyyyMMdd') A_CREDITSTARTDATE,
+					to_Date(v.DATEEXP,'yyyyMMdd') A_CREDITENDDATE,
+					--case when v.DATEEXP='22000101' then to_date(v.DATEEXP,'yyyyMMdd') else add_days(to_date(v.DATEEXP,'yyyyMMdd'),1) end A_CREDITENDDATE,
+					to_Date(case when v.DATEEFF < 20210101 then 20210101 else v.DATEEFF end,'yyyyMMdd') A_PROCESSINGSTARTDATE,
+					to_Date(v.DATEEXP,'yyyyMMdd') A_PROCESSINGENDDATE,
+					--case when v.DATEEXP='22000101' then to_date(v.DATEEXP,'yyyyMMdd') else add_days(to_date(v.DATEEXP,'yyyyMMdd'),1) end  A_PROCESSINGENDDATE,
+					mpg.displayvalue A_POSITIONGROUP,
+					to_Date(case when v.DATEEFF < 20210101 then 20210101 else v.DATEEFF end,'yyyyMMdd') A_EFFECTIVESTARTDATE,
+					--to_date(v.DATEEFF,'yyyyMMdd') A_EFFECTIVESTARTDATE,
+					to_Date(v.DATEEXP,'yyyyMMdd') A_EFFECTIVEENDDATE,
+					--case when v.DATEEXP='22000101' then to_date(v.DATEEXP,'yyyyMMdd') else add_days(to_date(v.DATEEXP,'yyyyMMdd'),1) end A_EFFECTIVEENDDATE,
+					v.LSTDATE A_last_modified,
+					v.AgentStatus as A_GA1,
+					ma2.displayvalue as A_GA2,
+					ma3.displayvalue as A_GA3,
+					ma4.displayvalue||' - '||ma4.storedvalue as A_GA4,
+					ma5.displayvalue AS A_GA5,
+					ma6.displayvalue AS A_GA6,
+					ma7.displayvalue AS A_GA7,
+					ma8.displayvalue AS A_GA8,
+					ma9.displayvalue AS A_GA9,
+					v.OLDAGENTCODE as A_GA10,
+					v.OFFICE as A_GA11,
+					v.DECISIONTYPE as A_GA15,
+					to_date(v.STARTEDWORKINGDATE,'yyyyMMdd') as A_GD1,
+					to_date(v.TITLEEFFECTIVESTARTDATE,'yyyyMMdd') as A_GD2,
+					Case when v.Agentstatus = 'CURR' THEN (select distinct Case When pv2.Agentstatus = 'PA' THEN to_date(pv2.Dateeff,'YYYYMMDD')
+                                        Else to_date(pv2.terminationdate,'YYYYMMDD') END from ext.CDL_APM_PRODUCERVER_BCKUP pv2
+                                        where pv2.producerno=v.producerno and to_date(pv2.dateeff,'YYYYMMDD') = add_days(to_date(v.Dateexp,'YYYYMMDD'),1)
+                                       and pv2.prosta<>9)
+					ELSE to_date(v.terminationdate,'YYYYMMDD') END as A_GD3,
+					to_date(terold.TERMINATIONDATE,'yyyyMMdd') as A_GD4,--A_OLDAGENTCODE,
+					temp3.GD5 as A_GD5,
+					to_date(v.UNITMOVEMENTDATE,'yyyyMMdd') A_GD6
+			from ext.CDL_APM_PRODUCER_BCKUP p
+			join ext.CDL_APM_PRODUCERVER_BCKUP v on v.producerno=p.producerno
+			left join ext.BVL_ITC_APM_COM_CODE_MAP mt on mt.codetypeid= 'L010_AGENTTITLE' and mt.storedvalue=v.title
+			left join ext.BVL_ITC_APM_COM_CODE_MAP mp on mp.codetypeid= 'L051_COMPPLAN' and mp.storedvalue=v.DISTRIBUTIONCHANNEL||'-'||v.title
+			left join ext.BVL_ITC_APM_COM_CODE_MAP mpg on mpg.codetypeid= 'BRANCH' and mpg.storedvalue=v.NODELEVEL3
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma2 on ma2.codetypeid= 'PRODUCERSUBTYPE' and ma2.storedvalue=v.PRODUCERSUBTYPE
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma3 on ma3.codetypeid= 'L012_AGENTCLASS' and ma3.storedvalue=v.AGENTCLASS
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma4 on ma4.codetypeid= 'L011_CHANNEL' and ma4.storedvalue=v.DISTRIBUTIONCHANNEL
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma5 on ma5.codetypeid= 'NODELEVEL2' and ma5.storedvalue=v.NODELEVEL2
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma6 on ma6.codetypeid= 'NODELEVEL3' and ma6.storedvalue=v.NODELEVEL3
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma7 on ma7.codetypeid= 'NODELEVEL4' and ma7.storedvalue=v.NODELEVEL4
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma8 on ma8.codetypeid= 'NODELEVEL5' and ma8.storedvalue=v.NODELEVEL5
+			left join ext.BVL_ITC_APM_COM_CODE_MAP ma9 on ma9.codetypeid= 'NODELEVEL6' and ma9.storedvalue=v.NODELEVEL6
+			left join temp3 on temp3.producerid=p.producerid
+			left join
+			(
+				select p.producerid,v.TERMINATIONDATE
+				from ext.CDL_APM_PRODUCER_BCKUP p
+				join ext.CDL_APM_PRODUCERVER_BCKUP v on v.producerno=p.producerno
+				where v.prosta<>9
+				and v.DATEEXP=22000101
+			) terold on terold.producerid=v.OLDAGENTCODE
+			where v.DATEEXP>=20210101
+			and v.producertype in ('Agent','Applicant')
+			and (
+					p_mode='ALL'
+					or
+					(
+						p_mode<>'ALL'
+						and to_date(v.LSTDATE,'yyyyMMdd')>=v_modified_date
+						and to_date(v.LSTDATE,'yyyyMMdd')<v_modified_enddate
+					)
+				)
+			and v.prosta<>9
+			
+		), comm as
+		(
+			select distinct
+					null agent_code,
+				   p.name C_position,
+				   t.name C_title,
+				   m.name C_HEADOFNODE,
+				   p.GENERICATTRIBUTE13 C_GENERICATTRIBUTE13,
+				   --RIGHT(p.GENERICATTRIBUTE4, 1) C_DISTRIBUTIONCHANNEL,
+				   p.GENERICATTRIBUTE4 C_DISTRIBUTIONCHANNEL,
+				   cp.name C_plan,
+				   p.CREDITSTARTDATE C_CREDITSTARTDATE,
+				   case when p.CREDITENDDATE='2200-01-01' then p.CREDITENDDATE else add_days(p.CREDITENDDATE,-1) end C_CREDITENDDATE,
+				   p.PROCESSINGSTARTDATE C_PROCESSINGSTARTDATE,
+				   case when p.PROCESSINGENDDATE='2200-01-01' then p.PROCESSINGENDDATE else add_days(p.PROCESSINGENDDATE,-1) end C_PROCESSINGENDDATE,
+				   pg.name C_POSITIONGROUP,
+				   p.EFFECTIVESTARTDATE C_EFFECTIVESTARTDATE,
+				   case when p.EFFECTIVEENDDATE='2200-01-01' then p.EFFECTIVEENDDATE else add_days(p.EFFECTIVEENDDATE,-1) end C_EFFECTIVEENDDATE,
+				   p.GENERICATTRIBUTE1 C_GA1,
+				   p.GENERICATTRIBUTE2 C_GA2,
+				   p.GENERICATTRIBUTE3 C_GA3,
+				   p.GENERICATTRIBUTE4 C_GA4,
+				   p.GENERICATTRIBUTE5 C_GA5,
+				   p.GENERICATTRIBUTE6 C_GA6,
+				   p.GENERICATTRIBUTE7 C_GA7,
+				   p.GENERICATTRIBUTE8 C_GA8,
+				   p.GENERICATTRIBUTE9 C_GA9,
+				   p.GENERICATTRIBUTE10 C_GA10,
+				   p.GENERICATTRIBUTE11 C_GA11,
+				   p.GENERICATTRIBUTE15 C_GA15,
+				   p.GENERICDATE1 C_GD1,
+				   p.GENERICDATE2 C_GD2,
+				   p.GENERICDATE3 C_GD3,
+				   p.GENERICDATE4 C_GD4,
+				   p.GENERICDATE5 C_GD5,
+				   p.GENERICDATE6 C_GD6,
+				   p.ISLAST,
+				   p.PROCESSINGUNITSEQ,
+				   p.ruleelementownerseq POSITIONSEQ,
+				   p.GENERICATTRIBUTE6 BRANCH_NAME
+			from  TCMP.CS_POSITION p
+			join tcmp.cs_title t on  t.ruleelementownerseq=p.titleseq
+			left join TCMP.CS_POSITION m on m.ruleelementownerseq=p.managerseq
+			left join TCMP.CS_POSITIONGROUP pg on pg.positiongroupseq=p.positiongroupseq
+			left join tcmp.CS_PLANASSIGNABLE cpa on cpa.RULEELEMENTOWNERSEQ=p.RULEELEMENTOWNERSEQ and cpa.removedate='2200-01-01' and p.EFFECTIVESTARTDATE=cpa.EFFECTIVESTARTDATE
+			left join tcmp.cs_plan cp on cpa.planseq=cp.RULEELEMENTOWNERSEQ and cp.islast=1 and cp.removedate='2200-01-01'-- and cp.modelseq<>0
+			where t.EFFECTIVEENDDATE='2200-01-01'
+			and t.removedate='2200-01-01'
+			and p.removedate='2200-01-01'
+			and m.removedate='2200-01-01'
+			and pg.removedate='2200-01-01'
+			/* and cpa.islast=1
+			and cpa.removedate='2200-01-01' */
+			/* and cp.islast=1
+			and cp.removedate='2200-01-01'
+			and cp.modelseq<>0 */
+			and exists ( select 1 from apm where apm.agent_code=p.name )
+		)
+		select v_modified_date MODIFIED_MONTH,
+			   apm.A_LAST_MODIFIED,
+			   apm.AGENT_CODE,
+			   comm.C_POSITION,
+			   apm.A_TITLE,
+			   apm.A_HEADOFNODE,
+			   apm.A_GENERICATTRIBUTE13,
+			   apm.A_DISTRIBUTIONCHANNEL,
+			   apm.A_PLAN,
+			   apm.A_CREDITSTARTDATE,
+			   apm.A_CREDITENDDATE,
+			   apm.A_PROCESSINGSTARTDATE,
+			   apm.A_PROCESSINGENDDATE,
+			   apm.A_POSITIONGROUP,
+			   apm.A_EFFECTIVESTARTDATE,
+			   apm.A_EFFECTIVEENDDATE,
+			   apm.A_GA1,
+			   apm.A_GA2,
+			   apm.A_GA3,
+			   apm.A_GA4,
+			   apm.A_GA5,
+			   apm.A_GA6,
+			   apm.A_GA7,
+			   apm.A_GA8,
+			   apm.A_GA9,
+			   apm.A_GA10,
+			   apm.A_GA11,
+			   apm.A_GA15,
+			   apm.A_GD1,
+			   apm.A_GD2,
+			   apm.A_GD3,
+			   apm.A_GD4,
+			   apm.A_GD5,
+			   apm.A_GD6,
+			   COMM.C_TITLE,
+			   COMM.C_HEADOFNODE,
+			   COMM.C_GENERICATTRIBUTE13,
+			   COMM.C_DISTRIBUTIONCHANNEL,
+			   COMM.C_PLAN,
+			   COMM.C_CREDITSTARTDATE,
+			   COMM.C_CREDITENDDATE,
+			   COMM.C_PROCESSINGSTARTDATE,
+			   COMM.C_PROCESSINGENDDATE,
+			   COMM.C_POSITIONGROUP,
+			   COMM.C_EFFECTIVESTARTDATE,
+			   COMM.C_EFFECTIVEENDDATE,
+			   COMM.C_GA1,
+			   COMM.C_GA2,
+			   COMM.C_GA3,
+			   COMM.C_GA4,
+			   COMM.C_GA5,
+			   COMM.C_GA6,
+			   COMM.C_GA7,
+			   COMM.C_GA8,
+			   COMM.C_GA9,
+			   COMM.C_GA10,
+			   COMM.C_GA11,
+			   COMM.C_GA15,
+			   COMM.C_GD1,
+			   COMM.C_GD2,
+			   COMM.C_GD3,
+			   COMM.C_GD4,
+			   COMM.C_GD5,
+			   COMM.C_GD6,
+			   COMM.ISLAST,
+			   COMM.PROCESSINGUNITSEQ,
+			   COMM.POSITIONSEQ,
+			   COMM.BRANCH_NAME
+		from apm
+		left join comm on apm.agent_code=comm.C_position
+						and apm.A_CREDITSTARTDATE=comm.C_CREDITSTARTDATE;
+		commit;
+		
+		update ext.RPT_BVL_ITC_COMPARE_POSITION_FULL
+		set PROCESSINGUNITSEQ=(case when a_distributionchannel='1' then 38280596832649219
+									when a_distributionchannel='3' then 38280596832649218
+									when a_distributionchannel='4' then 38280596832649320
+									when a_distributionchannel='5' then 38280596832649319
+									when a_distributionchannel='8' then 38280596832649318
+								end )
+		where PROCESSINGUNITSEQ is null;
+		commit;
+		
+		update ext.RPT_BVL_ITC_COMPARE_POSITION_FULL
+		set branch_name=TRIM(CASE WHEN LOCATE(A_GA6, '-') > 0
+				THEN SUBSTRING(A_GA6, 1, LOCATE(A_GA6, '-') - 2)
+				ELSE A_GA6 END)
+		where branch_name is null;
+		commit;
+		
+		-- tong hop tu bang chi tiet vao bang ket qua
+		delete from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT"
+		where MODIFIED_MONTH=v_modified_date;
+		
+		insert into "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT"
+		(
+			"MODIFIED_MONTH",
+			"A_LAST_MODIFIED",
+			"AGENT_CODE",
+			"C_POSITION",
+			"TITLE",
+			"HEADOFNODE",
+			"GENERICATTRIBUTE13",
+			"DISTRIBUTIONCHANNEL",
+			"C_PLAN",
+			"CREDITSTARTDATE",
+			"CREDITENDDATE",
+			"PROCESSINGSTARTDATE",
+			"PROCESSINGENDDATE",
+			"POSITIONGROUP",
+			"EFFECTIVESTARTDATE",
+			"EFFECTIVEENDDATE",
+			"GA1",
+			"GA2",
+			"GA3",
+			"GA4",
+			"GA5",
+			"GA6",
+			"GA7",
+			"GA8",
+			"GA9",
+			"GA10",
+			"GA11",
+			"GA15",
+			"GD1",
+			"GD2",
+			"GD3",
+			"GD4",
+			"GD5",
+			"GD6",
+			"C_ISLAST",
+			"A_ISLAST",
+			"PROCESSINGUNITSEQ",
+			"POSITIONSEQ",
+			"BRANCH_NAME"
+		)
+		select MODIFIED_MONTH,
+				A_LAST_MODIFIED,
+				AGENT_CODE,
+				C_POSITION,
+				case when IFNULL(A_TITLE,'NONE') = IFNULL(C_TITLE,'NONE') then C_TITLE else 'X' end TITLE,
+			   case when IFNULL(A_HEADOFNODE,'NONE') = IFNULL(C_HEADOFNODE,'NONE') then C_HEADOFNODE else 'X' end HEADOFNODE,
+			   case when IFNULL(A_GENERICATTRIBUTE13,'NONE') = IFNULL(SUBSTRING(C_GENERICATTRIBUTE13,LOCATE(C_GENERICATTRIBUTE13, '-') + 2),'NONE') then C_GENERICATTRIBUTE13 else 'X' end GENERICATTRIBUTE13,
+			   case when IFNULL(A_DISTRIBUTIONCHANNEL,'NONE') = IFNULL(RIGHT(C_DISTRIBUTIONCHANNEL,1),'NONE') then SUBSTR(C_DISTRIBUTIONCHANNEL,1,length(C_DISTRIBUTIONCHANNEL)-3) else 'X' end DISTRIBUTIONCHANNEL,
+			   case when IFNULL(A_PLAN,'NONE') = IFNULL(C_PLAN,'NONE') then C_PLAN else 'X' end C_PLAN,
+			   case when IFNULL(A_CREDITSTARTDATE,'1900-01-01') = IFNULL(C_CREDITSTARTDATE,'1900-01-01') then to_varchar(C_CREDITSTARTDATE,'dd-MM-yyyy') else 'X' end CREDITSTARTDATE,
+			   case when IFNULL(A_CREDITENDDATE,'1900-01-01') = IFNULL(C_CREDITENDDATE,'1900-01-01') then to_varchar(C_CREDITENDDATE,'dd-MM-yyyy') else 'X' end CREDITENDDATE,
+			   case when IFNULL(A_PROCESSINGSTARTDATE,'1900-01-01') = IFNULL(C_PROCESSINGSTARTDATE,'1900-01-01') then to_varchar(C_PROCESSINGSTARTDATE,'dd-MM-yyyy') else 'X' end PROCESSINGSTARTDATE,
+			   case when IFNULL(A_PROCESSINGENDDATE,'1900-01-01') = IFNULL(C_PROCESSINGENDDATE,'1900-01-01') then to_varchar(C_PROCESSINGENDDATE,'dd-MM-yyyy') else 'X' end PROCESSINGENDDATE,
+			   case when IFNULL(A_POSITIONGROUP,'NONE') = IFNULL(C_POSITIONGROUP,'NONE') then C_POSITIONGROUP else 'X' end POSITIONGROUP,
+			   case when IFNULL(A_EFFECTIVESTARTDATE,'1900-01-01') = IFNULL(C_EFFECTIVESTARTDATE,'1900-01-01') then to_varchar(C_EFFECTIVESTARTDATE,'dd-MM-yyyy') else 'X' end EFFECTIVESTARTDATE,
+			   case when IFNULL(A_EFFECTIVEENDDATE,'1900-01-01') = IFNULL(C_EFFECTIVEENDDATE,'1900-01-01') then to_varchar(C_EFFECTIVEENDDATE,'dd-MM-yyyy') else 'X' end EFFECTIVEENDDATE,
+			   case when IFNULL(A_GA1,'NONE') = IFNULL(C_GA1,'NONE') then C_GA1 else 'X' end GA1,
+			   case when IFNULL(A_GA2,'NONE') = IFNULL(C_GA2,'NONE') then C_GA2 else 'X' end GA2,
+			   case when IFNULL(A_GA3,'NONE') = IFNULL(C_GA3,'NONE') then C_GA3 else 'X' end GA3,
+			   case when IFNULL(A_GA4,'NONE') = IFNULL(C_GA4,'NONE') then C_GA4 else 'X' end GA4,
+			   case when IFNULL(A_GA5,'NONE') = IFNULL(C_GA5,'NONE') then C_GA5 else 'X' end GA5,
+			   case when IFNULL(A_GA6,'NONE') = IFNULL(C_GA6,'NONE') then C_GA6 else 'X' end GA6,
+			   case when IFNULL(A_GA7,'NONE') = IFNULL(C_GA7,'NONE') then C_GA7 else 'X' end GA7,
+			   case when IFNULL(A_GA8,'NONE') = IFNULL(C_GA8,'NONE') then C_GA8 else 'X' end GA8,
+			   case when IFNULL(A_GA9,'NONE') = IFNULL(C_GA9,'NONE') then C_GA9 else 'X' end GA9,
+			   case when IFNULL(A_GA10,'NONE') = IFNULL(C_GA10,'NONE') then C_GA10 else 'X' end GA10,
+			   case when IFNULL(A_GA11,'NONE') = IFNULL(C_GA11,'NONE') then C_GA11 else 'X' end GA11,
+			   case when IFNULL(A_GA15,'NONE') = IFNULL(C_GA15,'NONE') then C_GA15 else 'X' end GA15,
+			   case when IFNULL(A_GD1,'1900-01-01') = IFNULL(C_GD1,'1900-01-01') then to_varchar(C_GD1,'dd-MM-yyyy') else 'X' end GD1,
+			   case when IFNULL(A_GD2,'1900-01-01') = IFNULL(C_GD2,'1900-01-01') then to_varchar(C_GD2,'dd-MM-yyyy') else 'X' end GD2,
+			   case when IFNULL(A_GD3,'1900-01-01') = IFNULL(C_GD3,'1900-01-01') then to_varchar(C_GD3,'dd-MM-yyyy') else 'X' end GD3,
+			   case when IFNULL(A_GD4,'1900-01-01') = IFNULL(C_GD4,'1900-01-01') then to_varchar(C_GD4,'dd-MM-yyyy') else 'X' end GD4,
+			   case when IFNULL(A_GD5,'1900-01-01') = IFNULL(C_GD5,'1900-01-01') or  add_days(A_CREDITENDDATE,-1) < A_GD5 then to_varchar(C_GD5,'dd-MM-yyyy') else 'X' end GD5,
+			   case when IFNULL(A_GD6,'1900-01-01') = IFNULL(C_GD6,'1900-01-01') then to_varchar(C_GD6,'dd-MM-yyyy') else 'X' end GD6,
+			   C_ISLAST,
+			   case when A_EFFECTIVEENDDATE='2200-01-01' then '1' end A_ISLAST,
+			   "PROCESSINGUNITSEQ",
+				"POSITIONSEQ",
+				"BRANCH_NAME"
+		from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_FULL"
+		where MODIFIED_MONTH=v_modified_date
+		;
+		
+		update "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT"
+		set CHECK_ALL='X'
+		where (
+		('X') in (TITLE,HEADOFNODE,GENERICATTRIBUTE13,DISTRIBUTIONCHANNEL,C_PLAN,CREDITSTARTDATE,CREDITENDDATE,PROCESSINGSTARTDATE,PROCESSINGENDDATE,POSITIONGROUP,EFFECTIVESTARTDATE,EFFECTIVEENDDATE,GA1,GA2,GA3,GA4,GA5,GA6,GA7,GA8,GA9,GA10,GA11,GA15,GD1,GD2,GD3,GD4,GD5,GD6)
+		or IFNULL(AGENT_CODE,'NONE')<>IFNULL(C_POSITION,'NONE')
+		)
+		and MODIFIED_MONTH=v_modified_date
+		;
+		
+		update "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT"
+		set NUMBER_ROW_COMPARE= (select count(1) from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT" where MODIFIED_MONTH=v_modified_date)
+		where MODIFIED_MONTH=v_modified_date;
+		
+		update "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT"
+		set NUMBER_AGENT_COMPARE= (select count(1) from (select AGENT_CODE from "EXT"."RPT_BVL_ITC_COMPARE_POSITION_RESULT" where MODIFIED_MONTH=v_modified_date group by AGENT_CODE))
+		where MODIFIED_MONTH=v_modified_date;
+		commit;
+		
+	END;
