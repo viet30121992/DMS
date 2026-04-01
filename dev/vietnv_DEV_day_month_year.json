@@ -25150,6 +25150,409 @@
 			}
 		}
 	},
+	"EXT.CSA_BVL_ITC_INC34":{
+		"kind": "entity",
+		"@Common.Label": "INC34 - Báo cáo thưởng quý trưởng nhóm",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "Tháng dữ liệu",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "Dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_CODE": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PAR_AGENT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_CODE": {
+				"@Common.Label": "CHILD_AGENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHILD_AGENT_NAME": {
+				"@Common.Label": "CHILD_AGENT_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "Vùng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "BRANCH_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "DEPARTMENT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "DIVISION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "UNIT_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "Chức vụ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "Thù lao",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "Mã NTD",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "Ngày vào nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "TLTP Quý",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "TLĐC theo TLTP",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE11": {
+				"@Common.Label": "PR15",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6": {
+				"@Common.Label": "GENERICDATE6",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7": {
+				"@Common.Label": "GENERICDATE7",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8": {
+				"@Common.Label": "GENERICDATE8",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9": {
+				"@Common.Label": "GENERICDATE9",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10": {
+				"@Common.Label": "GENERICDATE10",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "Ngày hiệu lực chức vụ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE6_STR": {
+				"@Common.Label": "GENERICDATE6_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE7_STR": {
+				"@Common.Label": "GENERICDATE7_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE8_STR": {
+				"@Common.Label": "GENERICDATE8_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE9_STR": {
+				"@Common.Label": "GENERICDATE9_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE10_STR": {
+				"@Common.Label": "GENERICDATE10_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "PR15 (Value)",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "Lượt hoạt động Quý",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "TVVm quý HĐC",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "FYP xét thưởng",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "Tỷ lệ thưởng (Value)",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "Phí thực thu",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "TLTP Quý (Value)",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "TLĐC theo TLTP (Value)",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "FYC xét thưởng",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER10": {
+				"@Common.Label": "Thưởng Quý",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "FYP",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "Tỷ lệ nâng",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "Lượt T-2",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER14": {
+				"@Common.Label": "Lượt T-1",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER15": {
+				"@Common.Label": "Lượt T",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER16": {
+				"@Common.Label": "FYC",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER17": {
+				"@Common.Label": "Tỷ lệ ghi nhận FYC",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER18": {
+				"@Common.Label": "GENERICNUMBER18",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER19": {
+				"@Common.Label": "GENERICNUMBER19",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER20": {
+				"@Common.Label": "GENERICNUMBER20",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
+	},
 	"EXT.CSA_BVL_ITC_INC40": {
 		"kind": "entity",
 		"@Common.Label": "INC40 - Báo cáo quản lý mới trưởng ban",
@@ -27661,404 +28064,6 @@
 			},
 			"GENERICNUMBER9": {
 				"@Common.Label": "GENERICNUMBER9",
-				"type": "cds.Decimal",
-				"@Analytics.Measure": true,
-				"@Aggregation.default": {
-					"#": "SUM"
-				}
-			}
-		}
-	},
-	"EXT.CSA_BVL_ITC_INC14": {
-		"kind": "entity",
-		"@Common.Label": "INC14 - Thưởng Quý TVV",
-		"@Analytics.query": true,
-		"@Analytics.dataCategory": {
-			"#": "CUBE"
-		},
-		"elements": {
-			"DATA_MONTH": {
-				"@Common.Label": "Tháng dữ liệu",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"STT": {
-				"@Common.Label": "STT",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
-			},
-			"PROCESSINGUNITSEQ": {
-				"@Common.Label": "PROCESSINGUNITSEQ",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
-			},
-			"PROCESSINGUNITNAME": {
-				"@Common.Label": "PROCESSINGUNITNAME",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"PERIODNAME": {
-				"@Common.Label": "PERIODNAME",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"PERIODSEQ": {
-				"@Common.Label": "PERIODSEQ",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
-			},
-			"POSITIONSEQ": {
-				"@Common.Label": "POSITIONSEQ",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
-			},
-			"DATA_TYPE": {
-				"@Common.Label": "DATA_TYPE",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"DATA_ORDER": {
-				"@Common.Label": "DATA_ORDER",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
-			},
-			"PAR_AGENT_CODE": {
-				"@Common.Label": "Mã TVV",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"PAR_AGENT_NAME": {
-				"@Common.Label": "Tên TVV",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"CHILD_AGENT_CODE": {
-				"@Common.Label": "TVV mới quay lại",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"CHILD_AGENT_NAME": {
-				"@Common.Label": "CHILD_AGENT_NAME",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"CHANNEL_NAME": {
-				"@Common.Label": "Tên Kênh",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"CHANNEL_CODE": {
-				"@Common.Label": "Mã Kênh",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"REGION_NAME": {
-				"@Common.Label": "Tên Vùng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"REGION_CODE": {
-				"@Common.Label": "Mã Vùng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"BRANCH_NAME": {
-				"@Common.Label": "Công ty",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"BRANCH_CODE": {
-				"@Common.Label": "Mã Công ty",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"DEPARTMENT_NAME": {
-				"@Common.Label": "Tên Phòng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"DEPARTMENT_CODE": {
-				"@Common.Label": "Mã Phòng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"DIVISION_NAME": {
-				"@Common.Label": "Ban",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"DIVISION_CODE": {
-				"@Common.Label": "Mã Ban",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"UNIT_NAME": {
-				"@Common.Label": "Nhóm",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"UNIT_CODE": {
-				"@Common.Label": "Mã Nhóm",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"POS_NAME": {
-				"@Common.Label": "POS_NAME",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"POS_CODE": {
-				"@Common.Label": "POS_CODE",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE1": {
-				"@Common.Label": "GENERICATTRIBUTE1",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE2": {
-				"@Common.Label": "GENERICATTRIBUTE2",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE3": {
-				"@Common.Label": "Chức vụ",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE4": {
-				"@Common.Label": "GENERICATTRIBUTE4",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE6": {
-				"@Common.Label": "Tỷ lệ nâng FYP",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE7": {
-				"@Common.Label": "Tỷ lệ điều chỉnh",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE8": {
-				"@Common.Label": "TLTP",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE9": {
-				"@Common.Label": "Tỷ lệ thưởng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE10": {
-				"@Common.Label": "PR15",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE1": {
-				"@Common.Label": "GENERICDATE1",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE2": {
-				"@Common.Label": "GENERICDATE2",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE3": {
-				"@Common.Label": "GENERICDATE3",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE4": {
-				"@Common.Label": "GENERICDATE4",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE5": {
-				"@Common.Label": "GENERICDATE5",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE6": {
-				"@Common.Label": "GENERICDATE6",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE7": {
-				"@Common.Label": "GENERICDATE7",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE8": {
-				"@Common.Label": "GENERICDATE8",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE9": {
-				"@Common.Label": "GENERICDATE9",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE10": {
-				"@Common.Label": "GENERICDATE10",
-				"type": "cds.Date",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE1_STR": {
-				"@Common.Label": "GENERICDATE1_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE2_STR": {
-				"@Common.Label": "Ngày bắt đầu làm việc",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE3_STR": {
-				"@Common.Label": "GENERICDATE3_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE4_STR": {
-				"@Common.Label": "GENERICDATE4_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE5_STR": {
-				"@Common.Label": "GENERICDATE5_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE6_STR": {
-				"@Common.Label": "GENERICDATE6_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE7_STR": {
-				"@Common.Label": "GENERICDATE7_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE8_STR": {
-				"@Common.Label": "GENERICDATE8_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE9_STR": {
-				"@Common.Label": "GENERICDATE9_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICDATE10_STR": {
-				"@Common.Label": "GENERICDATE10_STR",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER1": {
-				"@Common.Label": "Tỷ lệ nâng FYP",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER2": {
-				"@Common.Label": "PR15",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER3": {
-				"@Common.Label": "Tỷ lệ thưởng",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER4": {
-				"@Common.Label": "TLTP",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER5": {
-				"@Common.Label": "Tỷ lệ điều chỉnh",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER6": {
-				"@Common.Label": "Tiền thưởng",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER7": {
-				"@Common.Label": "GENERICNUMBER7",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER8": {
-				"@Common.Label": "GENERICNUMBER8",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER9": {
-				"@Common.Label": "GENERICNUMBER9",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER10": {
-				"@Common.Label": "GENERICNUMBER10",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER11": {
-				"@Common.Label": "GENERICNUMBER11",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER12": {
-				"@Common.Label": "GENERICNUMBER12",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER13": {
-				"@Common.Label": "GENERICNUMBER13",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER14": {
-				"@Common.Label": "FYP xét thưởng",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER15": {
-				"@Common.Label": " FYP ",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER16": {
-				"@Common.Label": "FYC",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER17": {
-				"@Common.Label": "Phí thực thu",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER18": {
-				"@Common.Label": "GENERICNUMBER18",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
-				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
-			},
-			"GENERICNUMBER20": {
-				"@Common.Label": "GENERICNUMBER20",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
