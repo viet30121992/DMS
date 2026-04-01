@@ -21771,7 +21771,7 @@
                 "@Analytics.Dimension": true
             },
             "PROCESSINGUNITNAME": {
-                "@Common.Label": "PROCESSINGUNITNAME",
+                "@Common.Label": "Kênh",
                 "type": "cds.String",
                 "@Analytics.Dimension": true
             },
