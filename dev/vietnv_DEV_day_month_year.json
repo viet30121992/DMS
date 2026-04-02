@@ -25314,17 +25314,17 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "Thù lao",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
-			},
-			"GENERICATTRIBUTE6": {
 				"@Common.Label": "Mã NTD",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"GENERICATTRIBUTE7": {
-				"@Common.Label": "Ngày vào nhóm",
+				"@Common.Label": "Tỷ lệ thưởng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25419,7 +25419,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICDATE5_STR": {
-				"@Common.Label": "GENERICDATE5_STR",
+				"@Common.Label": "Ngày vào nhóm",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
