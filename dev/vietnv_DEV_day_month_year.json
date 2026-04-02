@@ -28366,32 +28366,32 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "Tỷ lệ nâng FYP",
+				"@Common.Label": " Tỷ lệ nâng FYP ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "PR15",
+				"@Common.Label": " PR15 ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "Tỷ lệ thưởng",
+				"@Common.Label": " Tỷ lệ thưởng ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "TLTP",
+				"@Common.Label": " TLTP ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER5": {
-				"@Common.Label": "Tỷ lệ điều chỉnh",
+				"@Common.Label": " Tỷ lệ điều chỉnh ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER6": {
-				"@Common.Label": "Tiền thưởng",
+				"@Common.Label": " Tiền thưởng ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -28431,7 +28431,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER14": {
-				"@Common.Label": "FYP xét thưởng",
+				"@Common.Label": " FYP xét thưởng ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -28441,12 +28441,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER16": {
-				"@Common.Label": "FYC",
+				"@Common.Label": " FYC ",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "Phí thực thu",
+				"@Common.Label": " Phí thực thu",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
