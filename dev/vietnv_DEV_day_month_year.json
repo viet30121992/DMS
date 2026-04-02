@@ -25339,7 +25339,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE10": {
-				"@Common.Label": "GENERICATTRIBUTE10",
+				"@Common.Label": "Tỷ lệ ghi nhận FYC",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25529,7 +25529,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER17": {
-				"@Common.Label": "Tỷ lệ ghi nhận FYC",
+				"@Common.Label": "Tỷ lệ ghi nhận FYC (Value)",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
