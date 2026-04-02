@@ -25319,7 +25319,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE6": {
-				"@Common.Label": "GENERICATTRIBUTE6",
+				"@Common.Label": "Tỷ lệ nâng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -25504,7 +25504,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER12": {
-				"@Common.Label": "Tỷ lệ nâng",
+				"@Common.Label": "Tỷ lệ nâng (Value)",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
