@@ -27486,6 +27486,16 @@
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
+			"F18_STR": {
+				"@Common.Label": "Thưởng quý theo TLTP ≤ 88%",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"F20_STR": {
+				"@Common.Label": "Thưởng quý TLTP vượt 88%",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
 			"GENERICNUMBER20": {
 				"@Common.Label": "GENERICNUMBER20",
 				"type": "cds.Decimal",
@@ -28451,7 +28461,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER18": {
-				"@Common.Label": "GENERICNUMBER18",
+				"@Common.Label": "Thưởng quý theo TLTP ≤ 88%",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -28461,7 +28471,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER20": {
-				"@Common.Label": "GENERICNUMBER20",
+				"@Common.Label": "Thưởng quý TLTP vượt 88%",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
