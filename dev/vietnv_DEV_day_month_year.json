@@ -26555,12 +26555,18 @@
 			"GENERICNUMBER1": {
 				"@Common.Label": "FYP",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "MAX"
+				}
 			},
 			"GENERICNUMBER2": {
 				"@Common.Label": "PĐT",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "MAX"
+				}
 			},
 			"GENERICNUMBER3": {
 				"@Common.Label": "GENERICNUMBER3",
@@ -27050,8 +27056,11 @@
 			},
 			"RATE_VALUE3": {
 				"@Common.Label": "Tỉ lệ thừa hưởng (Ông- Cháu)",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "MAX"
+				}
 			},
 			"GENERICATTRIBUTE2": {
 				"@Common.Label": "Loại TT(con)",
