@@ -26980,7 +26980,7 @@
 				"@Analytics.Dimension": true
 			},
 			"CHILD_UNIT_NAME": {
-				"@Common.Label": "Tên nhóm con",
+				"@Common.Label": "Nhóm con",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -26990,7 +26990,7 @@
 				"@Analytics.Dimension": true
 			},
 			"ROLE_DATE_STR": {
-				"@Common.Label": "Ngày tách nhóm",
+				"@Common.Label": "Ngày tách nhóm con",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -27695,8 +27695,11 @@
 			},
 			"RATE_VALUE1": {
 				"@Common.Label": "Tỉ lệ thừa hưởng",
-				"type": "cds.String",
-				"@Analytics.Dimension": true
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "MAX"
+				}
 			},
 			"GENERICATTRIBUTE2": {
 				"@Common.Label": "Loại thăng tiến",
