@@ -27069,6 +27069,14 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "ID",
+				"type": "cds.String",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "MAX"
+				}
+			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "GENERICNUMBER5",
 				"type": "cds.Decimal",
