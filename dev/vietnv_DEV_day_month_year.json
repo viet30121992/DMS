@@ -25539,7 +25539,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER19": {
-				"@Common.Label": "GENERICNUMBER19",
+				"@Common.Label": "ID",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
