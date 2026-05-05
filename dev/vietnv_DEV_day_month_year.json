@@ -27056,11 +27056,8 @@
 			},
 			"RATE_VALUE3": {
 				"@Common.Label": "Tỉ lệ thừa hưởng (Ông- Cháu)",
-				"type": "cds.Decimal",
-				"@Analytics.Measure": true,
-				"@Aggregation.default": {
-					"#": "MAX"
-				}
+				"type": "cds.String",
+				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE2": {
 				"@Common.Label": "Loại TT(con)",
@@ -27077,7 +27074,7 @@
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
-					"#": "SUM"
+					"#": "MAX"
 				}
 			}
 		}
