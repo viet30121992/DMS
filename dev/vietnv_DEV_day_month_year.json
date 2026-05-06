@@ -25550,6 +25550,16 @@
 				"@Aggregation.default": {
 					"#": "SUM"
 				}
+			},
+			"GENERICNUMBER21": {
+				"@Common.Label": "Thưởng quý theo TLTP ≤ 88%",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER22": {
+				"@Common.Label": "Thưởng quý TLTP vượt 88%",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
 			}
 		}
 	},
