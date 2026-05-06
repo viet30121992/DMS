@@ -27074,7 +27074,7 @@
 				"type": "cds.String",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
-					"#": "MAX"
+					"#": "COUNT_DISTINCT"
 				}
 			},
 			"GENERICNUMBER5": {
