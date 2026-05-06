@@ -26796,8 +26796,8 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER1": {
-				"@Common.Label": "Phí  ĐT",
+			"GENERICNUMBER3": {
+				"@Common.Label": "GENERICNUMBER3",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
@@ -26806,8 +26806,8 @@
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
-			"GENERICNUMBER3": {
-				"@Common.Label": "GENERICNUMBER3",
+			"GENERICNUMBER1": {
+				"@Common.Label": "Phí  ĐT",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
