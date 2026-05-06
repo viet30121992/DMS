@@ -25348,6 +25348,51 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"GENERICATTRIBUTE12": {
+				"@Common.Label": "GENERICATTRIBUTE12",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE13": {
+				"@Common.Label": "GENERICATTRIBUTE13",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE14": {
+				"@Common.Label": "GENERICATTRIBUTE14",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE15": {
+				"@Common.Label": "GENERICATTRIBUTE15",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE16": {
+				"@Common.Label": "GENERICATTRIBUTE16",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE17": {
+				"@Common.Label": "GENERICATTRIBUTE17",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE18": {
+				"@Common.Label": "GENERICATTRIBUTE18",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE19": {
+				"@Common.Label": "GENERICATTRIBUTE19",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE20": {
+				"@Common.Label": "GENERICATTRIBUTE20",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"GENERICDATE1": {
 				"@Common.Label": "GENERICDATE1",
 				"type": "cds.Date",
@@ -25558,6 +25603,96 @@
 			},
 			"GENERICNUMBER22": {
 				"@Common.Label": "Thưởng quý TLTP vượt 88%",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER23": {
+				"@Common.Label": "GENERICNUMBER23",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER24": {
+				"@Common.Label": "GENERICNUMBER24",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER25": {
+				"@Common.Label": "GENERICNUMBER25",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER26": {
+				"@Common.Label": "GENERICNUMBER26",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER27": {
+				"@Common.Label": "GENERICNUMBER27",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER28": {
+				"@Common.Label": "GENERICNUMBER28",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER29": {
+				"@Common.Label": "GENERICNUMBER29",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER30": {
+				"@Common.Label": "GENERICNUMBER30",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER31": {
+				"@Common.Label": "GENERICNUMBER31",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER32": {
+				"@Common.Label": "GENERICNUMBER32",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER33": {
+				"@Common.Label": "GENERICNUMBER33",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER34": {
+				"@Common.Label": "GENERICNUMBER34",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER35": {
+				"@Common.Label": "GENERICNUMBER35",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER36": {
+				"@Common.Label": "GENERICNUMBER36",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER37": {
+				"@Common.Label": "GENERICNUMBER37",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER38": {
+				"@Common.Label": "GENERICNUMBER38",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER39": {
+				"@Common.Label": "GENERICNUMBER39",
+				"type": "cds.Decimal",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER40": {
+				"@Common.Label": "GENERICNUMBER40",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			}
