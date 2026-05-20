@@ -20651,7 +20651,120 @@
 				"@Analytics.Dimension": true
 			}
 		}
+	},	
+			"EXT.CSA_KPI_TEST_VW": {
+		"kind": "entity",
+		"@Common.Label": "CSA_KPI_TEST",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"TENANTID": {
+				"@Common.Label": "Tenant ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "Period Seq",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "Processingunit Name",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POSITION_NAME": {
+				"@Common.Label": "Position Name",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SENIORITY": {
+				"@Common.Label": "Seniority",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"IP": {
+				"@Common.Label": "IP",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FYP": {
+				"@Common.Label": "FYP",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AFYP": {
+				"@Common.Label": "AFYP",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FYC": {
+				"@Common.Label": "FYC",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RYP": {
+				"@Common.Label": "RYP",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "Generic Number 1",
+				"type": "cds.Decimal",
+				"scale": 2,
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	},
+					"EXT.CSA_PAD_TEST_VW": {
+		"kind": "entity",
+		"@Common.Label": "CSA_PAD_TEST",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"TENANTID": {
+				"@Common.Label": "Tenant ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "Period Seq",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITION_NAME": {
+				"@Common.Label": "Position Name",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "ProcessingUnit Sequence",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONGENERICNUMBER1": {
+				"@Common.Label": "Generic Number 1",
+				"type": "cds.Decimal",
+				"scale": 2,
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
+	},	
 	"EXT.CSA_INC01_BVL": {
 		"kind": "entity",
 		"@Common.Label": "CSA_INC01_BVL",
@@ -28110,7 +28223,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "GENERICATTRIBUTE5",
+				"@Common.Label": "ServiceID",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
