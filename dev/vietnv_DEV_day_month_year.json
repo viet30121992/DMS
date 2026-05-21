@@ -29173,6 +29173,11 @@
 				"@Aggregation.default": {
 					"#": "SUM"
 				}
+			},
+			"GENERICNUMBER60": {
+				"@Common.Label": "STT",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
 			}
 		}
 	}
