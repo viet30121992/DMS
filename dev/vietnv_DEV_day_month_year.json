@@ -28783,6 +28783,16 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"Nam": {
+				"@Common.Label": "Năm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"Thang": {
+				"@Common.Label": "Tháng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"PROCESSINGUNITSEQ": {
 				"@Common.Label": "PROCESSINGUNITSEQ",
 				"type": "cds.Integer64",
@@ -29201,6 +29211,16 @@
 			},
 			"COMPENSATIONDATE_STR": {
 				"@Common.Label": "COMPENSATIONDATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"Nam": {
+				"@Common.Label": "Năm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"Thang": {
+				"@Common.Label": "Tháng",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
