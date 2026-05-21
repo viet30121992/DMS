@@ -28754,5 +28754,426 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_INC50": {
+		"kind": "entity",
+		"@Common.Label": "INC50 - Báo cáo kế toán thu nhập",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "Tháng dữ liệu",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"STT": {
+				"@Common.Label": "GENERICNUMBER60",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"COMPENSATIONDATE": {
+				"@Common.Label": "COMPENSATIONDATE",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"COMPENSATIONDATE_STR": {
+				"@Common.Label": "COMPENSATIONDATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODNAME": {
+				"@Common.Label": "PERIODNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PERIODSEQ": {
+				"@Common.Label": "PERIODSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"POSITIONSEQ": {
+				"@Common.Label": "POSITIONSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"DATA_TYPE": {
+				"@Common.Label": "Dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DATA_ORDER": {
+				"@Common.Label": "DATA_ORDER",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_CODE": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_NAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "Vùng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "Mã công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "Mã phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE1": {
+				"@Common.Label": "GENERICATTRIBUTE1",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "GENERICATTRIBUTE2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "GENERICATTRIBUTE3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "GENERICATTRIBUTE4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE5": {
+				"@Common.Label": "ServiceID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE6": {
+				"@Common.Label": "GENERICATTRIBUTE6",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE7": {
+				"@Common.Label": "GENERICATTRIBUTE7",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE8": {
+				"@Common.Label": "GENERICATTRIBUTE8",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE9": {
+				"@Common.Label": "GENERICATTRIBUTE9",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE10": {
+				"@Common.Label": "GENERICATTRIBUTE10",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1": {
+				"@Common.Label": "GENERICDATE1",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2": {
+				"@Common.Label": "GENERICDATE2",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3": {
+				"@Common.Label": "GENERICDATE3",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4": {
+				"@Common.Label": "GENERICDATE4",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5": {
+				"@Common.Label": "GENERICDATE5",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE1_STR": {
+				"@Common.Label": "GENERICDATE1_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE2_STR": {
+				"@Common.Label": "GENERICDATE2_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE3_STR": {
+				"@Common.Label": "GENERICDATE3_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE4_STR": {
+				"@Common.Label": "GENERICDATE4_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICDATE5_STR": {
+				"@Common.Label": "GENERICDATE5_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER1": {
+				"@Common.Label": "GENERICNUMBER1",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "Thưởng TVV mới",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER3": {
+				"@Common.Label": "Thưởng năng suất TVV",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "Thưởng tháng 13 TVV",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER5": {
+				"@Common.Label": "Thưởng Đồng hành TTN",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "Thưởng Vượt trội TTN",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER7": {
+				"@Common.Label": "Thưởng tuyển luyện",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER8": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER9": {
+				"@Common.Label": "GENERICNUMBER9",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER41": {
+				"@Common.Label": "Thưởng Quý TVV",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER42": {
+				"@Common.Label": "Thưởng Quý TVV gia tăng thưởng TP",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER47": {
+				"@Common.Label": "Thưởng Quý CQL",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER48": {
+				"@Common.Label": "Thưởng Quý CQL gia tăng thưởng TP",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER50": {
+				"@Common.Label": "Hoa hồng khai thác",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER51": {
+				"@Common.Label": "Thưởng Phát triển kinh doanh",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER52": {
+				"@Common.Label": "Thưởng Quản lý mới",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER53": {
+				"@Common.Label": "Thưởng Phát triển hệ thống",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER54": {
+				"@Common.Label": "Thưởng Quản lý khởi nghiệp",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER55": {
+				"@Common.Label": "Thưởng Năm",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER56": {
+				"@Common.Label": "Tổng thu nhập cá nhân",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER57": {
+				"@Common.Label": "Tổng thu nhập cấp quản lý",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER58": {
+				"@Common.Label": "TỔNG CỘNG",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
