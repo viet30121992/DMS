@@ -28768,8 +28768,8 @@
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
-			"STT": {
-				"@Common.Label": "GENERICNUMBER60",
+			"GENERICNUMBER60": {
+				"@Common.Label": "STT",
 				"type": "cds.Integer64",
 				"@Analytics.Dimension": true
 			},
@@ -28919,7 +28919,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICATTRIBUTE5": {
-				"@Common.Label": "ServiceID",
+				"@Common.Label": "GENERICATTRIBUTE5",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -29173,11 +29173,6 @@
 				"@Aggregation.default": {
 					"#": "SUM"
 				}
-			},
-			"GENERICNUMBER60": {
-				"@Common.Label": "STT",
-				"type": "cds.Integer64",
-				"@Analytics.Dimension": true
 			}
 		}
 	},
@@ -29194,8 +29189,8 @@
 				"type": "cds.Date",
 				"@Analytics.Dimension": true
 			},
-			"STT": {
-				"@Common.Label": "GENERICNUMBER60",
+			"GENERICNUMBER60": {
+				"@Common.Label": "STT",
 				"type": "cds.Integer64",
 				"@Analytics.Dimension": true
 			},
