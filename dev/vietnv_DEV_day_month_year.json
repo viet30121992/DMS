@@ -30597,5 +30597,168 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_BVL_ITC_EML06": {
+		"kind": "entity",
+		"@Common.Label": "EML06 - Chương trình thi đua nhân đôi sao việt",
+		"@Analytics.query": true,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"DATA_MONTH": {
+				"@Common.Label": "Tháng",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITSEQ": {
+				"@Common.Label": "PROCESSINGUNITSEQ",
+				"type": "cds.Integer64",
+				"@Analytics.Dimension": true
+			},
+			"PROCESSINGUNITNAME": {
+				"@Common.Label": "PROCESSINGUNITNAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_CODE": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CHANNEL_CODE": {
+				"@Common.Label": "CHANNEL_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_NAME": {
+				"@Common.Label": "REGION_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"REGION_CODE": {
+				"@Common.Label": "REGION_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BRANCH_CODE": {
+				"@Common.Label": "Mã công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_NAME": {
+				"@Common.Label": "Phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DEPARTMENT_CODE": {
+				"@Common.Label": "Mã phòng",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DIVISION_CODE": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"UNIT_CODE": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "POS_NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE2": {
+				"@Common.Label": "Năm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE3": {
+				"@Common.Label": "Tên các chương trình thi đua",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICATTRIBUTE4": {
+				"@Common.Label": "Chức vụ",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER11": {
+				"@Common.Label": "Tổng IP cá nhân trong thời gian thi đua",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER2": {
+				"@Common.Label": "Tổng IP cá nhân được cộng",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER12": {
+				"@Common.Label": "Tổng IP nhóm",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER4": {
+				"@Common.Label": "Tổng IP nhóm được cộng",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER13": {
+				"@Common.Label": "Tổng IP ban",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"GENERICNUMBER6": {
+				"@Common.Label": "Tổng IP ban được cộng",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			}
+		}
 	}
 }
