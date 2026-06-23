@@ -29984,97 +29984,154 @@
 			"GENERICNUMBER1": {
 				"@Common.Label": "Thâm niên",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER2": {
 				"@Common.Label": "FYP nhóm",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER3": {
 				"@Common.Label": "Lượt TVV hoạt động chuẩn",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER4": {
 				"@Common.Label": "FYP nhóm lũy kế chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "Lượt TVV hoạt động chuẩn lũy kế chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER6": {
 				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER7": {
 				"@Common.Label": "GENERICNUMBER7",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER8": {
 				"@Common.Label": "GENERICNUMBER8",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER9": {
 				"@Common.Label": "GENERICNUMBER9",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER10": {
 				"@Common.Label": "GENERICNUMBER10",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER11": {
 				"@Common.Label": "GENERICNUMBER11",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER12": {
 				"@Common.Label": "GENERICNUMBER12",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER13": {
 				"@Common.Label": "GENERICNUMBER13",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER14": {
 				"@Common.Label": "GENERICNUMBER14",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER15": {
-				"@Common.Label": "Tổng thù lao đã nhận trong chặng",
+				"@Common.Label": "Thù lao đã nhận trong chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER16": {
 				"@Common.Label": "Thù lao QLKN",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER17": {
 				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER18": {
 				"@Common.Label": "GENERICNUMBER18",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER19": {
 				"@Common.Label": "GENERICNUMBER19",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER20": {
 				"@Common.Label": "GENERICNUMBER20",
@@ -30382,97 +30439,154 @@
 			"GENERICNUMBER1": {
 				"@Common.Label": "Thâm niên",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER2": {
 				"@Common.Label": "FYP nhóm",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER3": {
 				"@Common.Label": "Lượt TVV mới hoạt động chuẩn",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER4": {
 				"@Common.Label": "FYP nhóm lũy kế chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "Lượt TVV mới hoạt động chuẩn lũy kế chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER6": {
 				"@Common.Label": "Thù lao sau điều chỉnh",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER7": {
 				"@Common.Label": "GENERICNUMBER7",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER8": {
 				"@Common.Label": "GENERICNUMBER8",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER9": {
 				"@Common.Label": "GENERICNUMBER9",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER10": {
 				"@Common.Label": "GENERICNUMBER10",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER11": {
 				"@Common.Label": "GENERICNUMBER11",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER12": {
 				"@Common.Label": "GENERICNUMBER12",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER13": {
 				"@Common.Label": "GENERICNUMBER13",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER14": {
 				"@Common.Label": "GENERICNUMBER14",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER15": {
-				"@Common.Label": "Tổng thù lao đã nhận trong chặng",
+				"@Common.Label": "Thù lao đã nhận trong chặng",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER16": {
 				"@Common.Label": "Thù lao QLKN",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER17": {
 				"@Common.Label": "Hệ số điều chỉnh",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER18": {
 				"@Common.Label": "GENERICNUMBER18",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER19": {
 				"@Common.Label": "GENERICNUMBER19",
 				"type": "cds.Decimal",
-				"@Analytics.Dimension": true
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
 			},
 			"GENERICNUMBER20": {
 				"@Common.Label": "GENERICNUMBER20",
