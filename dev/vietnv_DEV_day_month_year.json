@@ -7004,6 +7004,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"FYP_INDIVIDUAL_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Cá nhân được thưởng (Các chương trình nhân đôi)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"NO_OF_QUALIFIED_IN_ORIGINAL_UNIT": {
 				"@Common.Label": "Số lượng TVV đạt chuẩn nhóm gốc",
 				"type": "cds.String",
@@ -7049,6 +7054,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"FYP_UM_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Nhóm được thưởng (Các chương trình nhân đôi)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"FYP_OF_ORIGINAL_DIVISION": {
 				"@Common.Label": "Tổng FYP KTM Ban gốc",
 				"type": "cds.String",
@@ -7061,6 +7071,11 @@
 			},
 			"FYP_OF_AM": {
 				"@Common.Label": "Tổng FYP KTM (Ban)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FYP_AM_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Ban được thưởng (Các chương trình nhân đôi)",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
