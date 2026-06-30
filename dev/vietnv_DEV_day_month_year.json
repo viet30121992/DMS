@@ -30761,9 +30761,9 @@
 			}
 		}
 	},
-	"EXT.CSA_BVL_ITC_INC34": {
+	"EXT.CSA_BVL_ITC_INC22": {
 		"kind": "entity",
-		"@Common.Label": "INC34 - Báo cáo thưởng quý trưởng nhóm",
+		"@Common.Label": "INC22 - Quản lý khởi nghiệp TTN",
 		"@Analytics.query": true,
 		"@Analytics.dataCategory": {
 			"#": "CUBE"
