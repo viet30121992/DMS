@@ -30453,7 +30453,7 @@
 				}
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "Lượt TVV mới hoạt động chuẩn",
+				"@Common.Label": "Lượt TVV hoạt động chuẩn",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
@@ -30469,7 +30469,7 @@
 				}
 			},
 			"GENERICNUMBER5": {
-				"@Common.Label": "Lượt TVV mới hoạt động chuẩn lũy kế chặng",
+				"@Common.Label": "Lượt TVV hoạt động chuẩn lũy kế chặng",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
