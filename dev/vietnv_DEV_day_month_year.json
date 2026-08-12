@@ -31738,7 +31738,7 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER1": {
-				"@Common.Label": "Đạt thưởng quý I",
+				"@Common.Label": "Đạt thưởng quý I.",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
@@ -31746,7 +31746,7 @@
 				}
 			},
 			"GENERICNUMBER2": {
-				"@Common.Label": "Đạt thưởng quý II",
+				"@Common.Label": "Đạt thưởng quý II.",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
@@ -31754,7 +31754,7 @@
 				}
 			},
 			"GENERICNUMBER3": {
-				"@Common.Label": "Đạt thưởng quý III",
+				"@Common.Label": "Đạt thưởng quý III. ",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
@@ -31762,12 +31762,32 @@
 				}
 			},
 			"GENERICNUMBER4": {
-				"@Common.Label": "Đạt thưởng quý IV",
+				"@Common.Label": "Đạt thưởng quý IV.",
 				"type": "cds.Decimal",
 				"@Analytics.Measure": true,
 				"@Aggregation.default": {
 					"#": "SUM"
 				}
+			},
+			"GENERICNUMBER1_STR": {
+				"@Common.Label": "Đạt thưởng quý I",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER2_STR": {
+				"@Common.Label": "Đạt thưởng quý II",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER3_STR": {
+				"@Common.Label": "Đạt thưởng quý III",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"GENERICNUMBER4_STR": {
+				"@Common.Label": "Đạt thưởng quý IV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER5": {
 				"@Common.Label": "Số Quý đạt thưởng Quý TN",
