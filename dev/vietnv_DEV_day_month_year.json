@@ -31678,12 +31678,12 @@
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER6": {
-				"@Common.Label": "GENERICNUMBER6",
+				"@Common.Label": "Tổng số quý đạt thưởng",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
 			"GENERICNUMBER7": {
-				"@Common.Label": "GENERICNUMBER7",
+				"@Common.Label": "FYP năm",
 				"type": "cds.Decimal",
 				"@Analytics.Dimension": true
 			},
