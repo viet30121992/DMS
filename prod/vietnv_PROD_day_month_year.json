@@ -7004,6 +7004,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"FYP_INDIVIDUAL_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Cá nhân được thưởng (Các chương trình nhân đôi)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"NO_OF_QUALIFIED_IN_ORIGINAL_UNIT": {
 				"@Common.Label": "Số lượng TVV đạt chuẩn nhóm gốc",
 				"type": "cds.String",
@@ -7049,6 +7054,11 @@
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
+			"FYP_UM_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Nhóm được thưởng (Các chương trình nhân đôi)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
 			"FYP_OF_ORIGINAL_DIVISION": {
 				"@Common.Label": "Tổng FYP KTM Ban gốc",
 				"type": "cds.String",
@@ -7061,6 +7071,11 @@
 			},
 			"FYP_OF_AM": {
 				"@Common.Label": "Tổng FYP KTM (Ban)",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"FYP_AM_ADDITIONAL_PROGRAM": {
+				"@Common.Label": "Tổng IP Ban được thưởng (Các chương trình nhân đôi)",
 				"type": "cds.String",
 				"@Analytics.Dimension": true
 			},
@@ -29435,6 +29450,141 @@
 				"@Aggregation.default": {
 					"#": "SUM"
 				}
+			}
+		}
+	},
+"EXT.CSA_RPT_DELETED_POSITION_RELATIONS": {
+		"kind": "entity",
+		"@Common.Label": "Deleted Position Relations",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"NUM_COL": {
+				"@Common.Label": "NUM COL",
+				"type": "cds.Integer",
+				"@Analytics.Measure": true
+			},
+			"POSITION_RELATION_SEQ": {
+				"@Common.Label": "Position Relation Seq",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"ROLL_TYPE": {
+				"@Common.Label": "Roll Type",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CREATOR": {
+				"@Common.Label": "Creator",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_ID": {
+				"@Common.Label": "Source Participant ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_STATUS": {
+				"@Common.Label": "Source Participant Status",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_CHANNEL": {
+				"@Common.Label": "Source Participant Channel",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_REGION": {
+				"@Common.Label": "Source Participant Region",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_DEPARTMENT": {
+				"@Common.Label": "Source Participant Department",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_DIVISION": {
+				"@Common.Label": "Source Participant Division",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SOURCE_PARTICIPANT_UNIT": {
+				"@Common.Label": "Source Participant Unit",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_ID": {
+				"@Common.Label": "Receiver Participant ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_STATUS": {
+				"@Common.Label": "Receiver Participant Status",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_CHANNEL": {
+				"@Common.Label": "Receiver Participant Channel",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_REGION": {
+				"@Common.Label": "Receiver Participant Region",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_BRANCH": {
+				"@Common.Label": "Receiver Participant Branch",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_DEPARTMENT": {
+				"@Common.Label": "Receiver Participant Department",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_DIVISION": {
+				"@Common.Label": "Receiver Participant Division",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RECEIVER_PARTICIPANT_UNIT": {
+				"@Common.Label": "Receiver Participant Unit",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_START_DATE": {
+				"@Common.Label": "Effective Start Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_END_DATE": {
+				"@Common.Label": "Effective End Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_REMOVE_DATE": {
+				"@Common.Label": "Relation Remove Date",
+				"type": "cds.Date",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_START_DATE_STR": {
+				"@Common.Label": "Effective Start Date STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_END_DATE_STR": {
+				"@Common.Label": "Effective End Date STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"RELATION_REMOVE_DATE_STR": {
+				"@Common.Label": "Relation Remove Date STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
 			}
 		}
 	}
