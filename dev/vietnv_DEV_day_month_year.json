@@ -32466,5 +32466,163 @@
 				}
 			}
 		}
+	},
+	"EXT.CSA_POLICY_TERMS_DETAILS": {
+		"kind": "entity",
+		"@Common.Label": "POLICY TERMS DETAILS",
+		"@Analytics.query": false,
+		"@Analytics.dataCategory": {
+			"#": "CUBE"
+		},
+		"elements": {
+			"SEQ_NO": {
+				"@Common.Label": "STT",
+				"type": "cds.Decimal",
+				"@Analytics.Measure": true,
+				"@Aggregation.default": {
+					"#": "SUM"
+				}
+			},
+			"RECORDTYPE": {
+				"@Common.Label": "RECORDTYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_DATE": {
+				"@Common.Label": "EFFECTIVE_DATE",
+				"type": "cds.Timestamp",
+				"@Analytics.Dimension": true
+			},
+			"EXPIRATION_DATE": {
+				"@Common.Label": "EXPIRATION_DATE",
+				"type": "cds.Timestamp",
+				"@Analytics.Dimension": true
+			},
+			"EFFECTIVE_DATE_STR": {
+				"@Common.Label": "EFFECTIVE_DATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"EXPIRATION_DATE_STR": {
+				"@Common.Label": "EXPIRATION_DATE_STR",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"PRODUCERTYPE": {
+				"@Common.Label": "PRODUCERTYPE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_CODE": {
+				"@Common.Label": "Mã TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"AGENT_NAME": {
+				"@Common.Label": "Tên TVV",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"DISTRIBUTIONCHANNEL": {
+				"@Common.Label": "DISTRIBUTIONCHANNEL",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"BUSINESSUNITNAME": {
+				"@Common.Label": "Kênh",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_CODE": {
+				"@Common.Label": "POS_CODE",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"POS_NAME": {
+				"@Common.Label": "Công ty",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL2": {
+				"@Common.Label": "NODELEVEL2",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL2NAME": {
+				"@Common.Label": "NODELEVEL2NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL3": {
+				"@Common.Label": "NODELEVEL3",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL3NAME": {
+				"@Common.Label": "NODELEVEL3NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL4": {
+				"@Common.Label": "NODELEVEL4",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL4NAME": {
+				"@Common.Label": "NODELEVEL4NAME",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL5": {
+				"@Common.Label": "Mã ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL5NAME": {
+				"@Common.Label": "Ban",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL6": {
+				"@Common.Label": "Mã nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"NODELEVEL6NAME": {
+				"@Common.Label": "Nhóm",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"YEAR_VERSION": {
+				"@Common.Label": "Policy Version",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CONFIRMATIONDATE": {
+				"@Common.Label": "Thời gian xác nhận",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"TERMID": {
+				"@Common.Label": "Term ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CONFIRMATIONRESULT": {
+				"@Common.Label": "Kết quả xác nhận",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"CASEKEY": {
+				"@Common.Label": "Case ID",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			},
+			"SUMMARY_DETAIL": {
+				"@Common.Label": "Dữ liệu",
+				"type": "cds.String",
+				"@Analytics.Dimension": true
+			}
+		}
 	}
 }
